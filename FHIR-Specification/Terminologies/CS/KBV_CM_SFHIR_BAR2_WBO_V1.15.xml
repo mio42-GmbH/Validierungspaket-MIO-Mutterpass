@@ -1,0 +1,3981 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ConceptMap xmlns="http://hl7.org/fhir" xmlns:ns2="http://www.w3.org/1999/xhtml">
+    <url value="https://fhir.kbv.de/ConceptMap/KBV_CM_SFHIR_BAR2_WBO"/>
+    <version value="1.15"/>
+    <name value="KBV_CM_SFHIR_BAR2_WBO"/>
+    <status value="active"/>
+    <date value="2019-04-01"/>
+    <publisher value="Kassenärztliche Bundesvereinigung"/>
+    <contact>
+        <telecom>
+            <system value="url"/>
+            <value value="http://www.kbv.de"/>
+        </telecom>
+    </contact>
+    <description value="Mapping der fkeys aus der Schlüsseltabelle S_BAR2_WBO"/>
+    <copyright value="Kassenärztliche Bundesvereinigung"/>
+    <group> 
+        <source value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/>
+        <sourceVersion value="1.15"/>
+        <target value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_STATISTIKGEBIET"/>
+        <targetVersion value="0.90"/>         
+        <element>
+            <code value="001"/>
+            <target>
+                <code value="02"/>
+                <display value="Praktiker"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="002"/>
+            <target>
+                <code value="02"/>
+                <display value="Praktiker"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="010"/>
+            <target>
+                <code value="01"/>
+                <display value="Allgemeinmediziner"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="020"/>
+            <target>
+                <code value="04"/>
+                <display value="Anästhesisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="022"/>
+            <target>
+                <code value="04"/>
+                <display value="Anästhesisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="030"/>
+            <target>
+                <code value="05"/>
+                <display value="Augenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="040"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="041"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="042"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="043"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="044"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="045"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="046"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="047"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="048"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="050"/>
+            <target>
+                <code value="07"/>
+                <display value="Frauenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="060"/>
+            <target>
+                <code value="08"/>
+                <display value="HNO-Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="061"/>
+            <target>
+                <code value="08"/>
+                <display value="HNO-Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="062"/>
+            <target>
+                <code value="08"/>
+                <display value="HNO-Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="063"/>
+            <target>
+                <code value="08"/>
+                <display value="HNO-Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="070"/>
+            <target>
+                <code value="09"/>
+                <display value="Hautärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="080"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="081"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="082"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="083"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="084"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="085"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="086"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="087"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="088"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="089"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="090"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="091"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="092"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="093"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="094"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="095"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="096"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="097"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="098"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="099"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="100"/>
+            <target>
+                <code value="12"/>
+                <display value="Kind.Jug.Psychiater"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="102"/>
+            <target>
+                <code value="12"/>
+                <display value="Kind.Jug.Psychiater"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="110"/>
+            <target>
+                <code value="13"/>
+                <display value="Laborärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="111"/>
+            <target>
+                <code value="13"/>
+                <display value="Laborärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="112"/>
+            <target>
+                <code value="13"/>
+                <display value="Laborärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="120"/>
+            <target>
+                <code value="14"/>
+                <display value="Lungenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="125"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="130"/>
+            <target>
+                <code value="15"/>
+                <display value="Mund-Kiefer-Chirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="131"/>
+            <target>
+                <code value="15"/>
+                <display value="Mund-Kiefer-Chirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="140"/>
+            <target>
+                <code value="16"/>
+                <display value="Nervenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="141"/>
+            <target>
+                <code value="16"/>
+                <display value="Nervenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="142"/>
+            <target>
+                <code value="16"/>
+                <display value="Nervenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="143"/>
+            <target>
+                <code value="26"/>
+                <display value="Psychotherapeuten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="144"/>
+            <target>
+                <code value="26"/>
+                <display value="Psychotherapeuten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="145"/>
+            <target>
+                <code value="16"/>
+                <display value="Nervenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="146"/>
+            <target>
+                <code value="16"/>
+                <display value="Nervenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="147"/>
+            <target>
+                <code value="16"/>
+                <display value="Nervenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="148"/>
+            <target>
+                <code value="26"/>
+                <display value="Psychotherapeuten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="149"/>
+            <target>
+                <code value="16"/>
+                <display value="Nervenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="150"/>
+            <target>
+                <code value="17"/>
+                <display value="Neurochirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="160"/>
+            <target>
+                <code value="18"/>
+                <display value="Orthopäden"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="161"/>
+            <target>
+                <code value="18"/>
+                <display value="Orthopäden"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="170"/>
+            <target>
+                <code value="19"/>
+                <display value="Pathologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="171"/>
+            <target>
+                <code value="19"/>
+                <display value="Pathologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="180"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="181"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="190"/>
+            <target>
+                <code value="20"/>
+                <display value="Radiologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="191"/>
+            <target>
+                <code value="20"/>
+                <display value="Radiologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="192"/>
+            <target>
+                <code value="20"/>
+                <display value="Radiologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="194"/>
+            <target>
+                <code value="20"/>
+                <display value="Radiologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="195"/>
+            <target>
+                <code value="20"/>
+                <display value="Radiologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="196"/>
+            <target>
+                <code value="20"/>
+                <display value="Radiologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="197"/>
+            <target>
+                <code value="20"/>
+                <display value="Radiologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="199"/>
+            <target>
+                <code value="20"/>
+                <display value="Radiologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="200"/>
+            <target>
+                <code value="22"/>
+                <display value="Urologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="210"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="220"/>
+            <target>
+                <code value="21"/>
+                <display value="Nuklearmediziner"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="230"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="240"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="250"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="271"/>
+            <target>
+                <code value="19"/>
+                <display value="Pathologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="281"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="291"/>
+            <target>
+                <code value="20"/>
+                <display value="Radiologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="301"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="302"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="303"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="304"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="305"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="306"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="307"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="308"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="309"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="310"/>
+            <target>
+                <code value="26"/>
+                <display value="Psychotherapeuten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="311"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="312"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="313"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="314"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="315"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="317"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="320"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="321"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="322"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="324"/>
+            <target>
+                <code value="08"/>
+                <display value="HNO-Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="326"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="327"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="328"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="330"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="340"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="341"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="342"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="343"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="344"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="350"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="351"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="352"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="353"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="354"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="355"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="356"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="357"/>
+            <target>
+                <code value="13"/>
+                <display value="Laborärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="358"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="359"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="360"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="361"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="371"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="372"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="373"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="374"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="470"/>
+            <target>
+                <code value="26"/>
+                <display value="Psychotherapeuten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="471"/>
+            <target>
+                <code value="26"/>
+                <display value="Psychotherapeuten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="500"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="501"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="502"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="503"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="504"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="505"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="506"/>
+            <target>
+                <code value="19"/>
+                <display value="Pathologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="510"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="511"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="512"/>
+            <target>
+                <code value="18"/>
+                <display value="Orthopäden"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="513"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="514"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="515"/>
+            <target>
+                <code value="07"/>
+                <display value="Frauenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="516"/>
+            <target>
+                <code value="07"/>
+                <display value="Frauenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="517"/>
+            <target>
+                <code value="07"/>
+                <display value="Frauenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="518"/>
+            <target>
+                <code value="08"/>
+                <display value="HNO-Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="520"/>
+            <target>
+                <code value="01"/>
+                <display value="Allgemeinmediziner"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="521"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="522"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="523"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="524"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="525"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="526"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="527"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="528"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="529"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="530"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="531"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="532"/>
+            <target>
+                <code value="13"/>
+                <display value="Laborärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="533"/>
+            <target>
+                <code value="16"/>
+                <display value="Nervenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="534"/>
+            <target>
+                <code value="26"/>
+                <display value="Psychotherapeuten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="535"/>
+            <target>
+                <code value="20"/>
+                <display value="Radiologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="536"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="537"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="538"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="539"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="540"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="541"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="542"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="543"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="544"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="545"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="546"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="547"/>
+            <target>
+                <code value="01"/>
+                <display value="Allgemeinmediziner"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="548"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="549"/>
+            <target>
+                <code value="16"/>
+                <display value="Nervenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="550"/>
+            <target>
+                <code value="16"/>
+                <display value="Nervenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="551"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="552"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="553"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="554"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="555"/>
+            <target>
+                <code value="09"/>
+                <display value="Hautärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="556"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="557"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="558"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="559"/>
+            <target>
+                <code value="18"/>
+                <display value="Orthopäden"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="560"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="561"/>
+            <target>
+                <code value="10"/>
+                <display value="Internisten"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="562"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="563"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="564"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="565"/>
+            <target>
+                <code value="11"/>
+                <display value="Kinderärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="566"/>
+            <target>
+                <code value="13"/>
+                <display value="Laborärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="567"/>
+            <target>
+                <code value="15"/>
+                <display value="Mund-Kiefer-Chirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="568"/>
+            <target>
+                <code value="19"/>
+                <display value="Pathologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="569"/>
+            <target>
+                <code value="23"/>
+                <display value="Sonstige Ärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="570"/>
+            <target>
+                <code value="20"/>
+                <display value="Radiologen"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="571"/>
+            <target>
+                <code value="07"/>
+                <display value="Frauenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+        <element>
+            <code value="572"/>
+            <target>
+                <code value="07"/>
+                <display value="Frauenärzte"/>
+                <equivalence value="wider"/>
+                <comment value="Statistikgebiet"/>
+            </target>
+        </element>
+    </group> 
+    <group> 
+        <source value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO"/>
+        <sourceVersion value="1.15"/>
+        <target value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_ARZTNRFACHGRUPPE"/>
+        <targetVersion value="1.00"/>         
+         <element>
+            <code value="001"/>
+            <target>
+                <code value="02"/>
+                <display value="hausärztlicher Praktischer Arzt/Arzt ohne Facharzt-Weiterbildung"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="002"/>
+            <target>
+                <code value="02"/>
+                <display value="hausärztlicher Praktischer Arzt/Arzt ohne Facharzt-Weiterbildung"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="010"/>
+            <target>
+                <code value="01"/>
+                <display value="Allgemeinmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="080"/>
+            <target>
+                <code value="03"/>
+                <display value="hausärztliche Innere Medizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="090"/>
+            <target>
+                <code value="34"/>
+                <display value="hausärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="091"/>
+            <target>
+                <code value="36"/>
+                <display value="hausärztliche Kinder-Kardiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="092"/>
+            <target>
+                <code value="38"/>
+                <display value="hausärztliche Neuropädiatrie/Kinderneuropsychiatrie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="093"/>
+            <target>
+                <code value="37"/>
+                <display value="hausärztliche Neonatologie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="094"/>
+            <target>
+                <code value="34"/>
+                <display value="hausärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="095"/>
+            <target>
+                <code value="35"/>
+                <display value="hausärztliche Kinder-Hämatologie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="096"/>
+            <target>
+                <code value="34"/>
+                <display value="hausärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="097"/>
+            <target>
+                <code value="39"/>
+                <display value="hausärztliche Kinder-Pneumologie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="098"/>
+            <target>
+                <code value="34"/>
+                <display value="hausärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="099"/>
+            <target>
+                <code value="34"/>
+                <display value="hausärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="340"/>
+            <target>
+                <code value="34"/>
+                <display value="hausärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="341"/>
+            <target>
+                <code value="34"/>
+                <display value="hausärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="342"/>
+            <target>
+                <code value="34"/>
+                <display value="hausärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="343"/>
+            <target>
+                <code value="34"/>
+                <display value="hausärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="344"/>
+            <target>
+                <code value="34"/>
+                <display value="hausärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="505"/>
+            <target>
+                <code value="34"/>
+                <display value="hausärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="520"/>
+            <target>
+                <code value="01"/>
+                <display value="Allgemeinmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="530"/>
+            <target>
+                <code value="35"/>
+                <display value="hausärztliche Kinder-Hämatologie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="531"/>
+            <target>
+                <code value="38"/>
+                <display value="hausärztliche Neuropädiatrie/Kinderneuropsychiatrie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="536"/>
+            <target>
+                <code value="34"/>
+                <display value="hausärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="537"/>
+            <target>
+                <code value="34"/>
+                <display value="hausärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="538"/>
+            <target>
+                <code value="34"/>
+                <display value="hausärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="539"/>
+            <target>
+                <code value="39"/>
+                <display value="hausärztliche Kinder-Pneumologie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="540"/>
+            <target>
+                <code value="03"/>
+                <display value="hausärztliche Innere Medizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="547"/>
+            <target>
+                <code value="01"/>
+                <display value="Allgemeinmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="548"/>
+            <target>
+                <code value="23"/>
+                <display value="fachärztliche Innere Medizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="558"/>
+            <target>
+                <code value="07"/>
+                <display value="Gefäßchirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="559"/>
+            <target>
+                <code value="12"/>
+                <display value="Rheumatologie (der ehemaligen Orthopädie)"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="560"/>
+            <target>
+                <code value="14"/>
+                <display value="Thoraxchirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="561"/>
+            <target>
+                <code value="33"/>
+                <display value="Infektiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="562"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="563"/>
+            <target>
+                <code value="45"/>
+                <display value="fachärztliche Kinder-Pneumologie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="564"/>
+            <target>
+                <code value="42"/>
+                <display value="fachärztliche Kinder-Kardiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="565"/>
+            <target>
+                <code value="43"/>
+                <display value="fachärztliche Neonatologie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="566"/>
+            <target>
+                <code value="49"/>
+                <display value="Mikrobiologie, Virologie und Infektionsepidemiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="567"/>
+            <target>
+                <code value="50"/>
+                <display value="Mund-Kiefer-Gesichtschirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="568"/>
+            <target>
+                <code value="56"/>
+                <display value="Pathologie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="569"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="570"/>
+            <target>
+                <code value="63"/>
+                <display value="Kinderradiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Hausarzt"/>
+            </target>
+        </element>
+            
+         <element>
+            <code value="020"/>
+            <target>
+                <code value="04"/>
+                <display value="Anästhesiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="022"/>
+            <target>
+                <code value="04"/>
+                <display value="Anästhesiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="030"/>
+            <target>
+                <code value="05"/>
+                <display value="Augenheilkunde"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="040"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="041"/>
+            <target>
+                <code value="09"/>
+                <display value="Kinderchirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="042"/>
+            <target>
+                <code value="11"/>
+                <display value="SP Unfallchirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="043"/>
+            <target>
+                <code value="07"/>
+                <display value="Gefäßchirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="044"/>
+            <target>
+                <code value="13"/>
+                <display value="Plastische Chirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="045"/>
+            <target>
+                <code value="14"/>
+                <display value="Thoraxchirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="046"/>
+            <target>
+                <code value="14"/>
+                <display value="Thoraxchirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="047"/>
+            <target>
+                <code value="07"/>
+                <display value="Gefäßchirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="048"/>
+            <target>
+                <code value="08"/>
+                <display value="Visceralchirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="050"/>
+            <target>
+                <code value="15"/>
+                <display value="Frauenheilkunde"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="060"/>
+            <target>
+                <code value="19"/>
+                <display value="Hals-Nasen-Ohrenheilkunde"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="061"/>
+            <target>
+                <code value="20"/>
+                <display value="Phoniatrie/Pädaudiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="062"/>
+            <target>
+                <code value="20"/>
+                <display value="Phoniatrie/Pädaudiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="063"/>
+            <target>
+                <code value="20"/>
+                <display value="Phoniatrie/Pädaudiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="070"/>
+            <target>
+                <code value="21"/>
+                <display value="Haut- und Geschlechtskrankheiten"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="080"/>
+            <target>
+                <code value="23"/>
+                <display value="fachärztliche Innere Medizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="081"/>
+            <target>
+                <code value="26"/>
+                <display value="Gastroenterologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="082"/>
+            <target>
+                <code value="28"/>
+                <display value="Kardiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="083"/>
+            <target>
+                <code value="30"/>
+                <display value="Pneumologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="084"/>
+            <target>
+                <code value="25"/>
+                <display value="Endokrinologie/Diabetologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="085"/>
+            <target>
+                <code value="27"/>
+                <display value="Hämatologie/Onkologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="086"/>
+            <target>
+                <code value="29"/>
+                <display value="Nephrologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="087"/>
+            <target>
+                <code value="31"/>
+                <display value="Rheumatologie (der Inneren Medizin)"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="088"/>
+            <target>
+                <code value="25"/>
+                <display value="Endokrinologie/Diabetologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="089"/>
+            <target>
+                <code value="33"/>
+                <display value="Infektiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="090"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="091"/>
+            <target>
+                <code value="42"/>
+                <display value="fachärztliche Kinder-Kardiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="092"/>
+            <target>
+                <code value="44"/>
+                <display value="fachärztliche Neuropädiatrie/Kinderneuropsychiatrie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="093"/>
+            <target>
+                <code value="43"/>
+                <display value="fachärztliche Neonatologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="094"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="095"/>
+            <target>
+                <code value="41"/>
+                <display value="fachärztliche Kinder-Hämatologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="096"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="097"/>
+            <target>
+                <code value="45"/>
+                <display value="fachärztliche Kinder-Pneumologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="098"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="099"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="100"/>
+            <target>
+                <code value="47"/>
+                <display value="Kinder- und Jugendpsychiatrie und -psychotherapie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="102"/>
+            <target>
+                <code value="47"/>
+                <display value="Kinder- und Jugendpsychiatrie und -psychotherapie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="110"/>
+            <target>
+                <code value="48"/>
+                <display value="Laboratoriumsmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="111"/>
+            <target>
+                <code value="49"/>
+                <display value="Mikrobiologie, Virologie und Infektionsepidemiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="112"/>
+            <target>
+                <code value="48"/>
+                <display value="Laboratoriumsmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="120"/>
+            <target>
+                <code value="30"/>
+                <display value="Pneumologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="125"/>
+            <target>
+                <code value="26"/>
+                <display value="Gastroenterologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="130"/>
+            <target>
+                <code value="50"/>
+                <display value="Mund-Kiefer-Gesichtschirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="131"/>
+            <target>
+                <code value="50"/>
+                <display value="Mund-Kiefer-Gesichtschirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="140"/>
+            <target>
+                <code value="51"/>
+                <display value="Nervenheilkunde/Neurologie und Psychiatrie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="141"/>
+            <target>
+                <code value="58"/>
+                <display value="Psychiatrie/Psychiatrie und Psychotherapie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="142"/>
+            <target>
+                <code value="53"/>
+                <display value="Neurologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="143"/>
+            <target>
+                <code value="61"/>
+                <display value="Psychotherapeutisch tätiger Arzt"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="144"/>
+            <target>
+                <code value="61"/>
+                <display value="Psychotherapeutisch tätiger Arzt"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="145"/>
+            <target>
+                <code value="51"/>
+                <display value="Nervenheilkunde/Neurologie und Psychiatrie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="146"/>
+            <target>
+                <code value="44"/>
+                <display value="fachärztliche Neuropädiatrie/Kinderneuropsychiatrie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="147"/>
+            <target>
+                <code value="58"/>
+                <display value="Psychiatrie/Psychiatrie und Psychotherapie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="148"/>
+            <target>
+                <code value="60"/>
+                <display value="Psychosomatische Medizin und Psychotherapie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="149"/>
+            <target>
+                <code value="51"/>
+                <display value="Nervenheilkunde/Neurologie und Psychiatrie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="150"/>
+            <target>
+                <code value="52"/>
+                <display value="Neurochirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="160"/>
+            <target>
+                <code value="10"/>
+                <display value="Orthopädie (und Unfallchirurgie)"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="161"/>
+            <target>
+                <code value="12"/>
+                <display value="Rheumatologie (der ehemaligen Orthopädie)"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="170"/>
+            <target>
+                <code value="56"/>
+                <display value="Pathologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="171"/>
+            <target>
+                <code value="55"/>
+                <display value="Neuropathologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="180"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="181"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="190"/>
+            <target>
+                <code value="62"/>
+                <display value="Radiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="191"/>
+            <target>
+                <code value="65"/>
+                <display value="Strahlentherapie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="192"/>
+            <target>
+                <code value="64"/>
+                <display value="Neuroradiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="194"/>
+            <target>
+                <code value="62"/>
+                <display value="Radiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="195"/>
+            <target>
+                <code value="62"/>
+                <display value="Radiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="196"/>
+            <target>
+                <code value="63"/>
+                <display value="Kinderradiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="197"/>
+            <target>
+                <code value="64"/>
+                <display value="Neuroradiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="199"/>
+            <target>
+                <code value="62"/>
+                <display value="Radiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="200"/>
+            <target>
+                <code value="67"/>
+                <display value="Urologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="210"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="220"/>
+            <target>
+                <code value="54"/>
+                <display value="Nuklearmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="230"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="240"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="250"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="271"/>
+            <target>
+                <code value="55"/>
+                <display value="Neuropathologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="281"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="291"/>
+            <target>
+                <code value="65"/>
+                <display value="Strahlentherapie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="301"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="302"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="303"/>
+            <target>
+                <code value="66"/>
+                <display value="Transfusionsmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="304"/>
+            <target>
+                <code value="09"/>
+                <display value="Kinderchirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="305"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="306"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="307"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="308"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="309"/>
+            <target>
+                <code value="57"/>
+                <display value="Physikalische und Rehabilitative Medizin/Physiotherapie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="310"/>
+            <target>
+                <code value="60"/>
+                <display value="Psychosomatische Medizin und Psychotherapie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="311"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="312"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="313"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="314"/>
+            <target>
+                <code value="22"/>
+                <display value="Humangenetik"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="315"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="317"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="320"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="321"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="322"/>
+            <target>
+                <code value="13"/>
+                <display value="Plastische Chirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="324"/>
+            <target>
+                <code value="20"/>
+                <display value="Phoniatrie/Pädaudiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="326"/>
+            <target>
+                <code value="24"/>
+                <display value="Angiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="327"/>
+            <target>
+                <code value="27"/>
+                <display value="Hämatologie/Onkologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="328"/>
+            <target>
+                <code value="32"/>
+                <display value="Geriatrie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="330"/>
+            <target>
+                <code value="57"/>
+                <display value="Physikalische und Rehabilitative Medizin/Physiotherapie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="340"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="341"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="342"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="343"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="344"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="350"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="351"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="352"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="353"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="354"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="355"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="356"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="357"/>
+            <target>
+                <code value="49"/>
+                <display value="Mikrobiologie, Virologie und Infektionsepidemiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="358"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="359"/>
+            <target>
+                <code value="49"/>
+                <display value="Mikrobiologie, Virologie und Infektionsepidemiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="360"/>
+            <target>
+                <code value="50"/>
+                <display value="Mund-Kiefer-Gesichtschirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="361"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="371"/>
+            <target>
+                <code value="48"/>
+                <display value="Laboratoriumsmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="372"/>
+            <target>
+                <code value="22"/>
+                <display value="Humangenetik"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="373"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="374"/>
+            <target>
+                <code value="56"/>
+                <display value="Pathologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="470"/>
+            <target>
+                <code value="68"/>
+                <display value="Psychologischer Psychotherapeut"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="471"/>
+            <target>
+                <code value="69"/>
+                <display value="Kinder- und Jugendlichen-Psychotherapeut"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="500"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="501"/>
+            <target>
+                <code value="66"/>
+                <display value="Transfusionsmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="502"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="503"/>
+            <target>
+                <code value="33"/>
+                <display value="Infektiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="504"/>
+            <target>
+                <code value="30"/>
+                <display value="Pneumologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="505"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="506"/>
+            <target>
+                <code value="56"/>
+                <display value="Pathologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="510"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="511"/>
+            <target>
+                <code value="07"/>
+                <display value="Gefäßchirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="512"/>
+            <target>
+                <code value="10"/>
+                <display value="Orthopädie (und Unfallchirurgie)"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="513"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="514"/>
+            <target>
+                <code value="08"/>
+                <display value="Visceralchirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="515"/>
+            <target>
+                <code value="17"/>
+                <display value="Gynäkologische Onkologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="516"/>
+            <target>
+                <code value="16"/>
+                <display value="Gynäkologische Endokrinologie und Reproduktionsmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="517"/>
+            <target>
+                <code value="18"/>
+                <display value="Spezielle Geburtshilfe und Perinatalmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="518"/>
+            <target>
+                <code value="20"/>
+                <display value="Phoniatrie/Pädaudiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="521"/>
+            <target>
+                <code value="24"/>
+                <display value="Angiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="522"/>
+            <target>
+                <code value="25"/>
+                <display value="Endokrinologie/Diabetologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="523"/>
+            <target>
+                <code value="26"/>
+                <display value="Gastroenterologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="524"/>
+            <target>
+                <code value="27"/>
+                <display value="Hämatologie/Onkologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="525"/>
+            <target>
+                <code value="28"/>
+                <display value="Kardiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="526"/>
+            <target>
+                <code value="29"/>
+                <display value="Nephrologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="527"/>
+            <target>
+                <code value="30"/>
+                <display value="Pneumologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="528"/>
+            <target>
+                <code value="31"/>
+                <display value="Rheumatologie (der Inneren Medizin)"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="529"/>
+            <target>
+                <code value="28"/>
+                <display value="Kardiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="530"/>
+            <target>
+                <code value="41"/>
+                <display value="fachärztliche Kinder-Hämatologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="531"/>
+            <target>
+                <code value="44"/>
+                <display value="fachärztliche Neuropädiatrie/Kinderneuropsychiatrie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="532"/>
+            <target>
+                <code value="49"/>
+                <display value="Mikrobiologie, Virologie und Infektionsepidemiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="533"/>
+            <target>
+                <code value="59"/>
+                <display value="Forensische Psychiatrie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="534"/>
+            <target>
+                <code value="60"/>
+                <display value="Psychosomatische Medizin und Psychotherapie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="535"/>
+            <target>
+                <code value="62"/>
+                <display value="Radiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="536"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="537"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="538"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="539"/>
+            <target>
+                <code value="45"/>
+                <display value="fachärztliche Kinder-Pneumologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="540"/>
+            <target>
+                <code value="23"/>
+                <display value="fachärztliche Innere Medizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="541"/>
+            <target>
+                <code value="32"/>
+                <display value="Geriatrie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="542"/>
+            <target>
+                <code value="13"/>
+                <display value="Plastische Chirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="543"/>
+            <target>
+                <code value="25"/>
+                <display value="Endokrinologie/Diabetologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="544"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="545"/>
+            <target>
+                <code value="29"/>
+                <display value="Nephrologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="546"/>
+            <target>
+                <code value="13"/>
+                <display value="Plastische Chirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="547"/>
+            <target>
+                <code value="01"/>
+                <display value="Allgemeinmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="548"/>
+            <target>
+                <code value="23"/>
+                <display value="fachärztliche Innere Medizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="549"/>
+            <target>
+                <code value="53"/>
+                <display value="Neurologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="550"/>
+            <target>
+                <code value="58"/>
+                <display value="Psychiatrie/Psychiatrie und Psychotherapie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="551"/>
+            <target>
+                <code value="25"/>
+                <display value="Endokrinologie/Diabetologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="552"/>
+            <target>
+                <code value="26"/>
+                <display value="Gastroenterologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="553"/>
+            <target>
+                <code value="28"/>
+                <display value="Kardiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="554"/>
+            <target>
+                <code value="31"/>
+                <display value="Rheumatologie (der Inneren Medizin)"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="555"/>
+            <target>
+                <code value="21"/>
+                <display value="Haut- und Geschlechtskrankheiten"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="556"/>
+            <target>
+                <code value="06"/>
+                <display value="Chirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="557"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="558"/>
+            <target>
+                <code value="07"/>
+                <display value="Gefäßchirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="559"/>
+            <target>
+                <code value="12"/>
+                <display value="Rheumatologie (der ehemaligen Orthopädie)"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="560"/>
+            <target>
+                <code value="14"/>
+                <display value="Thoraxchirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="561"/>
+            <target>
+                <code value="33"/>
+                <display value="Infektiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="562"/>
+            <target>
+                <code value="40"/>
+                <display value="fachärztliche Kinder- und Jugendmedizin"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="563"/>
+            <target>
+                <code value="45"/>
+                <display value="fachärztliche Kinder-Pneumologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="564"/>
+            <target>
+                <code value="42"/>
+                <display value="fachärztliche Kinder-Kardiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="565"/>
+            <target>
+                <code value="43"/>
+                <display value="fachärztliche Neonatologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="566"/>
+            <target>
+                <code value="49"/>
+                <display value="Mikrobiologie, Virologie und Infektionsepidemiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="567"/>
+            <target>
+                <code value="50"/>
+                <display value="Mund-Kiefer-Gesichtschirurgie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="568"/>
+            <target>
+                <code value="56"/>
+                <display value="Pathologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="569"/>
+            <target>
+                <code value="99"/>
+                <display value="weitere Fachgruppen"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="570"/>
+            <target>
+                <code value="63"/>
+                <display value="Kinderradiologie"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="571"/>
+            <target>
+                <code value="15"/>
+                <display value="Frauenheilkunde"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+         <element>
+            <code value="572"/>
+            <target>
+                <code value="15"/>
+                <display value="Frauenheilkunde"/>
+                <equivalence value="wider"/>
+                <comment value="Facharzt"/>
+            </target>
+        </element>
+    </group> 
+</ConceptMap>
