@@ -1,0 +1,442 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Patient_Child" />
+  <version value="1.1.0" />
+  <name value="KBV_PR_MIO_MR_Patient_Child" />
+  <status value="active" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="loinc" />
+    <uri value="http://loinc.org" />
+    <name value="LOINC code for the element" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Patient" />
+  <baseDefinition value="https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient|1.1.3" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Patient">
+      <path value="Patient" />
+      <definition value="In diesem Profil können Angaben zum Kind dokumentiert werden." />
+	  <constraint>
+	    <key value="pat-1" />
+                <severity value="error" />
+                <human value="pid has to be an UUID" />
+                <expression value="identifier.value.startsWith('urn:uuid:')" />
+                <source value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Patient_Child|1.1.0" />
+	  </constraint>
+    </element>
+    <element id="Patient.meta">
+      <path value="Patient.meta" />
+      <min value="1" />
+    </element>
+    <element id="Patient.meta.versionId">
+      <path value="Patient.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="Patient.meta.lastUpdated">
+      <path value="Patient.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="Patient.meta.source">
+      <path value="Patient.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="Patient.meta.profile">
+      <path value="Patient.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Patient_Child|1.1.0" />
+    </element>
+    <element id="Patient.meta.security">
+      <path value="Patient.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="Patient.meta.tag">
+      <path value="Patient.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="Patient.implicitRules">
+      <path value="Patient.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="Patient.language">
+      <path value="Patient.language" />
+      <max value="0" />
+    </element>
+    <element id="Patient.text">
+      <path value="Patient.text" />
+      <definition value="In diesem Element können die, in der Instanz, enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind." />
+    </element>
+    <element id="Patient.contained">
+      <path value="Patient.contained" />
+      <max value="0" />
+    </element>
+    <element id="Patient.extension">
+      <path value="Patient.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Patient.extension:ergaenzendeAngaben">
+      <path value="Patient.extension" />
+      <sliceName value="ergaenzendeAngaben" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.extension:ergaenzendeAngaben.url">
+      <path value="Patient.extension.url" />
+      <fixedUri value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment" />
+    </element>
+    <element id="Patient.extension:ergaenzendeAngaben.value[x]">
+      <path value="Patient.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.extension:ergaenzendeAngaben.value[x]:valueString">
+      <path value="Patient.extension.value[x]" />
+      <sliceName value="valueString" />
+	  <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier">
+      <path value="Patient.identifier" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.identifier:pid">
+            <path value="Patient.identifier" />
+            <sliceName value="pid" />
+            <min value="1" />
+			<max value="1" />
+			<mustSupport value="true" />
+        </element>
+		<element id="Patient.identifier:pid.type.coding">
+            <path value="Patient.identifier.type.coding" />
+            <min value="1" />
+            <max value="1" />
+        </element>
+        <element id="Patient.identifier:pid.type.coding.system">
+            <path value="Patient.identifier.type.coding.system" />
+            <min value="1" />
+            <fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        </element>
+        <element id="Patient.identifier:pid.type.coding.code">
+            <path value="Patient.identifier.type.coding.code" />
+            <min value="1" />
+            <fixedCode value="MR" />
+        </element>
+		<element id="Patient.identifier:pid.type.coding.display">
+            <path value="Patient.identifier.type.coding.display" />
+            <min value="1" />
+			<max value="1" />
+			<fixedString value="Medical record number" />
+        </element>
+		<element id="Patient.identifier:pid.system">
+            <path value="Patient.identifier.system" />
+            <min value="1" />
+			<max value="1"/>
+            <fixedUri value="urn:ietf:rfc:3986" />
+        </element>
+		<element id="Patient.identifier:pid.value">
+            <path value="Patient.identifier.value" />
+            <min value="1" />
+			<max value="1"/>
+            <mustSupport value="true" />
+        </element>
+		<element id="Patient.identifier:pid.period">
+            <path value="Patient.identifier.period" />
+            <max value="0" />
+        </element>
+		<element id="Patient.identifier:pid.assigner">
+            <path value="Patient.identifier.assigner" />
+            <max value="0" />
+        </element>
+		<element id="Patient.identifier:versichertenId_GKV">
+            <path value="Patient.identifier" />
+            <sliceName value="versichertenId_GKV" />
+            <max value="0" />
+        </element>
+		<element id="Patient.identifier:identifier:versichertennummer_pkv">
+            <path value="Patient.identifier" />
+            <sliceName value="versichertennummer_pkv" />
+            <max value="0" />
+        </element>
+		<element id="Patient.identifier:reisepassnummer">
+            <path value="Patient.identifier" />
+            <sliceName value="reisepassnummer" />
+            <max value="0" />
+        </element>
+		<element id="Patient.identifier:identifier:versichertennummer_kvk">
+            <path value="Patient.identifier" />
+            <sliceName value="versichertennummer_kvk" />
+            <max value="0" />
+        </element>
+    <element id="Patient.active">
+      <path value="Patient.active" />
+      <max value="0" />
+    </element>
+    <element id="Patient.name">
+      <path value="Patient.name" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="use" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+	  <max value="1" />
+    </element>
+	<element id="Patient.name:name">
+            <path value="Patient.name" />
+            <sliceName value="name" />
+            <max value="0" />
+			</element>
+			<element id="Patient.name:geburtsname">
+            <path value="Patient.name" />
+            <sliceName value="geburtsname" />
+            <max value="0" />
+			</element>
+    <element id="Patient.name:nameUnknown">
+      <path value="Patient.name" />
+      <sliceName value="nameUnknown" />
+      <min value="1" />
+	  <max value="1" />
+    </element>
+	<element id="Patient.name:nameUnknown.extension">
+            <path value="Patient.name.extension" />
+            <slicing>
+                <discriminator>
+                    <type value="value" />
+                    <path value="url" />
+                </discriminator>
+                <rules value="closed" />
+            </slicing>
+        </element>
+        <element id="Patient.name:nameUnknown.extension:data-absent-reason">
+            <path value="Patient.name.extension" />
+            <sliceName value="data-absent-reason" />
+            <type>
+                <code value="Extension" />
+                <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
+            </type>
+			<mustSupport value="true" />
+        </element>
+        <element id="Patient.name:nameUnknown.extension:data-absent-reason.value[x]">
+            <path value="Patient.name.extension.value[x]" />
+            <slicing>
+                <discriminator>
+                    <type value="type" />
+                    <path value="$this" />
+                </discriminator>
+                <rules value="closed" />
+            </slicing>
+			<mustSupport value="true" />
+        </element>
+        <element id="Patient.name:nameUnknown.extension:data-absent-reason.value[x]:valueCode">
+            <path value="Patient.name.extension.value[x]" />
+            <sliceName value="valueCode" />
+			<min value="1" />
+            <fixedCode value="unknown" />
+			<mustSupport value="true" />
+        </element>
+	<element id="Patient.name:nameUnknown.use">
+      <path value="Patient.name.use" />
+      <min value="1" />
+	  <fixedCode value="temp" />
+    </element>
+    <element id="Patient.name:nameUnknown.text">
+      <path value="Patient.name.text" />
+      <max value="0" />
+    </element>
+    <element id="Patient.name:nameUnknown.family">
+      <path value="Patient.name.family" />
+      <max value="0" />
+    </element>
+    <element id="Patient.name:nameUnknown.given">
+      <path value="Patient.name.given" />
+      <max value="0" />
+    </element>
+    <element id="Patient.name:nameUnknown.prefix">
+      <path value="Patient.name.prefix" />
+      <max value="0" />
+    </element>
+    <element id="Patient.name:nameUnknown.suffix">
+      <path value="Patient.name.suffix" />
+      <max value="0" />
+    </element>
+    <element id="Patient.name:nameUnknown.period">
+      <path value="Patient.name.period" />
+      <max value="0" />
+    </element>
+    <element id="Patient.telecom">
+      <path value="Patient.telecom" />
+      <max value="0" />
+    </element>
+    <element id="Patient.gender">
+      <path value="Patient.gender" />
+      <mustSupport value="true" />
+	  <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_MR_Gender|1.1.0" />
+      </binding>
+    </element>
+	<element id="Patient.gender.extension">
+      <path value="Patient.gender.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+	<element id="Patient.gender.extension:other-amtlich">
+            <path value="Patient.gender.extension" />
+            <sliceName value="other-amtlich" />
+            <max value="1" />
+            <type>
+                <code value="Extension" />
+                <profile value="http://fhir.de/StructureDefinition/gender-amtlich-de|0.9.13" />
+            </type>
+			 <mustSupport value="true" />
+        </element>
+    <element id="Patient.gender.extension:other-amtlich.value[x]">
+      <path value="Patient.gender.extension.value[x]" />
+	  <mustSupport value="true" />
+	  <binding>
+                <strength value="required" />
+                <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_MR_Gender_Extension|1.1.0" />
+            </binding>
+    </element>
+	<element id="Patient.birthDate">
+      <path value="Patient.birthDate" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.birthDate.extension">
+      <path value="Patient.birthDate.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Patient.birthDate.extension:data-absent-reason">
+      <path value="Patient.birthDate.extension" />
+      <sliceName value="data-absent-reason" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.birthDate.extension:data-absent-reason.value[x]">
+      <path value="Patient.birthDate.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.birthDate.extension:data-absent-reason.value[x]:valueCode">
+      <path value="Patient.birthDate.extension.valueCode" />
+      <sliceName value="valueCode" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.deceased[x]">
+      <path value="Patient.deceased[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.deceased[x]:deceasedBoolean">
+      <path value="Patient.deceased[x]" />
+      <sliceName value="deceasedBoolean" />
+      <type>
+        <code value="boolean" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.deceased[x]:deceasedDateTime">
+      <path value="Patient.deceased[x]" />
+      <sliceName value="deceasedDateTime" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Patient.address">
+      <path value="Patient.address" />
+      <max value="0" />
+    </element>
+    <element id="Patient.maritalStatus">
+      <path value="Patient.maritalStatus" />
+      <max value="0" />
+    </element>
+    <element id="Patient.multipleBirth[x]">
+      <path value="Patient.multipleBirth[x]" />
+      <max value="0" />
+    </element>
+    <element id="Patient.photo">
+      <path value="Patient.photo" />
+      <max value="0" />
+    </element>
+    <element id="Patient.contact">
+      <path value="Patient.contact" />
+      <max value="0" />
+    </element>
+    <element id="Patient.communication">
+      <path value="Patient.communication" />
+      <max value="0" />
+    </element>
+    <element id="Patient.generalPractitioner">
+      <path value="Patient.generalPractitioner" />
+      <max value="0" />
+    </element>
+    <element id="Patient.managingOrganization">
+      <path value="Patient.managingOrganization" />
+      <max value="0" />
+    </element>
+    <element id="Patient.link">
+      <path value="Patient.link" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

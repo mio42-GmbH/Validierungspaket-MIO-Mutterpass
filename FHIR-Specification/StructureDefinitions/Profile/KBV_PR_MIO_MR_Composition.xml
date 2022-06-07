@@ -1,0 +1,3475 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Composition" />
+  <version value="1.1.0" />
+  <name value="KBV_PR_MIO_MR_Composition" />
+  <status value="active" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="fhirdocumentreference" />
+    <uri value="http://hl7.org/fhir/documentreference" />
+    <name value="FHIR DocumentReference" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition">
+      <path value="Composition" />
+      <definition value="Dieses Profil dient als Übersichtsdokument. Durch Referenzierung sämtlicher Profile, die für den Upload eines Eintrages relevant sind, stellt es eine Art Inhaltsverzeichnis des Dokuments dar. Die zu dem Dokument Mutterpass passenden Inhalte sind dort auf oberster Ebene beschrieben. Dieses Profil behandelt das Szenario Daten eintragen." />
+    </element>
+    <element id="Composition.meta">
+      <path value="Composition.meta" />
+      <min value="1" />
+    </element>
+    <element id="Composition.meta.versionId">
+      <path value="Composition.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="Composition.meta.lastUpdated">
+      <path value="Composition.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="Composition.meta.source">
+      <path value="Composition.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="Composition.meta.profile">
+      <path value="Composition.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Composition|1.1.0" />
+    </element>
+    <element id="Composition.meta.security">
+      <path value="Composition.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="Composition.meta.tag">
+      <path value="Composition.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="Composition.implicitRules">
+      <path value="Composition.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="Composition.language">
+      <path value="Composition.language" />
+      <max value="0" />
+    </element>
+    <element id="Composition.text">
+      <path value="Composition.text" />
+      <definition value="In diesem Element können die, in der Instanz, enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind." />
+    </element>
+    <element id="Composition.contained">
+      <path value="Composition.contained" />
+      <max value="0" />
+    </element>
+    <element id="Composition.extension">
+      <path value="Composition.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.extension:Hinweise">
+      <path value="Composition.extension" />
+      <sliceName value="Hinweise" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_MR_Comments" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.extension:Hinweise.extension">
+      <path value="Composition.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.extension:Hinweise.extension:hinweiseSchwangere">
+      <path value="Composition.extension.extension" />
+      <sliceName value="hinweiseSchwangere" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.extension:Hinweise.extension:hinweiseSchwangere.value[x]">
+      <path value="Composition.extension.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.extension:Hinweise.extension:hinweiseMutter">
+      <path value="Composition.extension.extension" />
+      <sliceName value="hinweiseMutter" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.extension:Hinweise.extension:hinweiseMutter.value[x]">
+      <path value="Composition.extension.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.extension:Hinweise.extension:aufbewahrungshinweis">
+      <path value="Composition.extension.extension" />
+      <sliceName value="aufbewahrungshinweis" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.extension:Hinweise.extension:aufbewahrungshinweis.value[x]">
+      <path value="Composition.extension.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.identifier">
+      <path value="Composition.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.status">
+      <path value="Composition.status" />
+      <fixedCode value="final" />
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.type.coding">
+      <path value="Composition.type.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.type.coding.system">
+      <path value="Composition.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Composition.type.coding.version">
+      <path value="Composition.type.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20210731" />
+    </element>
+    <element id="Composition.type.coding.code">
+      <path value="Composition.type.coding.code" />
+      <min value="1" />
+      <fixedCode value="736377005" />
+    </element>
+    <element id="Composition.type.coding.display">
+      <path value="Composition.type.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Composition.type.coding.display.extension">
+      <path value="Composition.type.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.type.coding.display.extension:anzeigenameCodeSnomed">
+      <path value="Composition.type.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+    </element>
+    <element id="Composition.type.coding.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="Composition.type.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.type.coding.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="Composition.type.coding.display.extension.extension" />
+      <sliceName value="content" />
+    </element>
+    <element id="Composition.type.coding.display.extension:anzeigenameCodeSnomed.extension:content.url">
+      <path value="Composition.type.coding.display.extension.extension.url" />
+      <fixedUri value="content" />
+    </element>
+    <element id="Composition.type.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]">
+      <path value="Composition.type.coding.display.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.type.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="Composition.type.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <min value="1" />
+	  <fixedString value="Mutterpasseintrag" />
+    </element>
+    <element id="Composition.type.coding.display.extension:anzeigenameCodeSnomed.url">
+      <path value="Composition.type.coding.display.extension.url" />
+      <fixedUri value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+    </element>
+    <element id="Composition.type.coding.userSelected">
+      <path value="Composition.type.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.type.text">
+      <path value="Composition.type.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category" />
+      <max value="0" />
+    </element>
+    <element id="Composition.subject">
+      <path value="Composition.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Patient_Mother|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject.reference">
+      <path value="Composition.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject.type">
+      <path value="Composition.subject.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.subject.identifier">
+      <path value="Composition.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.subject.display">
+      <path value="Composition.subject.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.encounter">
+      <path value="Composition.encounter" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Encounter_General|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.encounter.reference">
+      <path value="Composition.encounter.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.encounter.type">
+      <path value="Composition.encounter.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.encounter.identifier">
+      <path value="Composition.encounter.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.encounter.display">
+      <path value="Composition.encounter.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.date">
+      <path value="Composition.date" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <max value="2" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Practitioner|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Organization|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author.reference">
+      <path value="Composition.author.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author.type">
+      <path value="Composition.author.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.author.identifier">
+      <path value="Composition.author.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.author.display">
+      <path value="Composition.author.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.title">
+      <path value="Composition.title" />
+      <fixedString value="Mutterpasseintrag" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.confidentiality">
+      <path value="Composition.confidentiality" />
+      <max value="0" />
+    </element>
+    <element id="Composition.attester">
+      <path value="Composition.attester" />
+      <max value="0" />
+    </element>
+    <element id="Composition.custodian">
+      <path value="Composition.custodian" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo">
+      <path value="Composition.relatesTo" />
+      <max value="0" />
+    </element>
+    <element id="Composition.event">
+      <path value="Composition.event" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section">
+      <path value="Composition.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="title" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Stempelinformationen">
+      <path value="Composition.section" />
+      <sliceName value="Stempelinformationen" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Stempelinformationen.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+      <fixedString value="Stempelinformationen des Arztes/der Klinik/der mitbetreuenden Hebamme" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Stempelinformationen.code">
+      <path value="Composition.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Stempelinformationen.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Stempelinformationen.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Stempelinformationen.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Stempelinformationen.mode">
+      <path value="Composition.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Stempelinformationen.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Stempelinformationen.entry">
+      <path value="Composition.section.entry" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Organization|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Practitioner|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Stempelinformationen.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Stempelinformationen.entry.type">
+      <path value="Composition.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Stempelinformationen.entry.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Stempelinformationen.entry.display">
+      <path value="Composition.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Stempelinformationen.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Stempelinformationen.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine">
+      <path value="Composition.section" />
+      <sliceName value="Termine" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Termine.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+      <fixedString value="Termine" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Termine.code">
+      <path value="Composition.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.mode">
+      <path value="Composition.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.entry">
+      <path value="Composition.section.entry" />
+	  <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Encounter_Arrival_Maternity_Hospital|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Termine.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Termine.entry.type">
+      <path value="Composition.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.entry.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.entry.display">
+      <path value="Composition.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.section">
+      <path value="Composition.section.section" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Termine.section.title">
+      <path value="Composition.section.section.title" />
+      <min value="1" />
+      <fixedString value="Nächster Untersuchungstermin" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Termine.section.code">
+      <path value="Composition.section.section.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Termine.section.code.coding">
+      <path value="Composition.section.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Termine.section.code.coding.system">
+      <path value="Composition.section.section.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Composition.section:Termine.section.code.coding.version">
+      <path value="Composition.section.section.code.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20210731" />
+    </element>
+    <element id="Composition.section:Termine.section.code.coding.code">
+      <path value="Composition.section.section.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="390840006" />
+    </element>
+    <element id="Composition.section:Termine.section.code.coding.display">
+      <path value="Composition.section.section.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Termine.section.code.coding.display.extension">
+      <path value="Composition.section.section.code.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:Termine.section.code.coding.display.extension:anzeigenameCodeSnomed">
+      <path value="Composition.section.section.code.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Termine.section.code.coding.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="Composition.section.section.code.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:Termine.section.code.coding.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="Composition.section.section.code.coding.display.extension.extension" />
+      <sliceName value="content" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Termine.section.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.url">
+      <path value="Composition.section.section.code.coding.display.extension.extension.url" />
+      <fixedUri value="content" />
+    </element>
+    <element id="Composition.section:Termine.section.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]">
+      <path value="Composition.section.section.code.coding.display.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Termine.section.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="Composition.section.section.code.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <min value="1" />
+	  <fixedString value="Nächster Untersuchungstermin" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Termine.section.code.coding.display.extension:anzeigenameCodeSnomed.url">
+      <path value="Composition.section.section.code.coding.display.extension.url" />
+      <fixedUri value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+    </element>
+    <element id="Composition.section:Termine.section.code.coding.userSelected">
+      <path value="Composition.section.section.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.section.code.text">
+      <path value="Composition.section.section.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.section.author">
+      <path value="Composition.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.section.focus">
+      <path value="Composition.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.section.text">
+      <path value="Composition.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.section.mode">
+      <path value="Composition.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.section.orderedBy">
+      <path value="Composition.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.section.entry">
+      <path value="Composition.section.section.entry" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Appointment_Pregnancy|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Termine.section.entry.reference">
+      <path value="Composition.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Termine.section.entry.type">
+      <path value="Composition.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.section.entry.identifier">
+      <path value="Composition.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.section.entry.display">
+      <path value="Composition.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.section.emptyReason">
+      <path value="Composition.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Termine.section.section">
+      <path value="Composition.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Terminbestimmung">
+      <path value="Composition.section" />
+      <sliceName value="Terminbestimmung" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Terminbestimmung.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+      <fixedString value="Terminbestimmung" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Terminbestimmung.code">
+      <path value="Composition.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Terminbestimmung.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Terminbestimmung.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Terminbestimmung.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Terminbestimmung.mode">
+      <path value="Composition.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Terminbestimmung.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Terminbestimmung.entry">
+      <path value="Composition.section.entry" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Date_Determination_Childbirth|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Menstrual_Cycle|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Date_Of_Conception|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Calculated_Delivery_Date|1.1.0" />
+		<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Delivery_Date|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Determination_Of_Pregnancy|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Terminbestimmung.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Terminbestimmung.entry.type">
+      <path value="Composition.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Terminbestimmung.entry.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Terminbestimmung.entry.display">
+      <path value="Composition.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Terminbestimmung.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Terminbestimmung.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AnamneseUndAllgemeineBefunde">
+      <path value="Composition.section" />
+      <sliceName value="AnamneseUndAllgemeineBefunde" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:AnamneseUndAllgemeineBefunde.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+      <fixedString value="Anamnese und allgemeine Befunde" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:AnamneseUndAllgemeineBefunde.code">
+      <path value="Composition.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AnamneseUndAllgemeineBefunde.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AnamneseUndAllgemeineBefunde.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AnamneseUndAllgemeineBefunde.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AnamneseUndAllgemeineBefunde.mode">
+      <path value="Composition.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AnamneseUndAllgemeineBefunde.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AnamneseUndAllgemeineBefunde.entry">
+      <path value="Composition.section.entry" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Age|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Baseline_Weight_Mother|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Gravida|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Height|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Para|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_ClinicalImpression_Initial_Examination|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Previous_Pregnancy|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:AnamneseUndAllgemeineBefunde.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:AnamneseUndAllgemeineBefunde.entry.type">
+      <path value="Composition.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AnamneseUndAllgemeineBefunde.entry.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AnamneseUndAllgemeineBefunde.entry.display">
+      <path value="Composition.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AnamneseUndAllgemeineBefunde.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AnamneseUndAllgemeineBefunde.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde">
+      <path value="Composition.section" />
+      <sliceName value="BesondereBefunde" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+      <fixedString value="Besondere Befunde" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.code">
+      <path value="Composition.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.mode">
+      <path value="Composition.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.entry">
+      <path value="Composition.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Special_Findings|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.entry.type">
+      <path value="Composition.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.entry.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.entry.display">
+      <path value="Composition.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section">
+      <path value="Composition.section.section" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.title">
+      <path value="Composition.section.section.title" />
+      <min value="1" />
+      <fixedString value="Gestationsdiabetes" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code">
+      <path value="Composition.section.section.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding">
+      <path value="Composition.section.section.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="2" />
+      <max value="2" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:snomedCT">
+      <path value="Composition.section.section.code.coding" />
+      <sliceName value="snomedCT" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:snomedCT.system">
+      <path value="Composition.section.section.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:snomedCT.version">
+      <path value="Composition.section.section.code.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20210731" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:snomedCT.code">
+      <path value="Composition.section.section.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="113076002" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:snomedCT.display">
+      <path value="Composition.section.section.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:snomedCT.display.extension">
+      <path value="Composition.section.section.code.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:snomedCT.display.extension:anzeigenameCodeSnomed">
+      <path value="Composition.section.section.code.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:snomedCT.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="Composition.section.section.code.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:snomedCT.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="Composition.section.section.code.coding.display.extension.extension" />
+      <sliceName value="content" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:snomedCT.display.extension:anzeigenameCodeSnomed.extension:content.url">
+      <path value="Composition.section.section.code.coding.display.extension.extension.url" />
+      <fixedUri value="content" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:snomedCT.display.extension:anzeigenameCodeSnomed.extension:content.value[x]">
+      <path value="Composition.section.section.code.coding.display.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:snomedCT.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="Composition.section.section.code.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+	  <fixedString value="Gestationsdiabetes" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:snomedCT.display.extension:anzeigenameCodeSnomed.url">
+      <path value="Composition.section.section.code.coding.display.extension.url" />
+      <fixedUri value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:snomedCT.userSelected">
+      <path value="Composition.section.section.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:loinc">
+      <path value="Composition.section.section.code.coding" />
+      <sliceName value="loinc" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:loinc.system">
+      <path value="Composition.section.section.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:loinc.version">
+      <path value="Composition.section.section.code.coding.version" />
+      <min value="1" />
+      <fixedString value="2.71" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:loinc.code">
+      <path value="Composition.section.section.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="21004-7" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:loinc.display">
+      <path value="Composition.section.section.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:loinc.display.extension">
+      <path value="Composition.section.section.code.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:loinc.display.extension:anzeigenameCodeLoinc">
+      <path value="Composition.section.section.code.coding.display.extension" />
+      <sliceName value="anzeigenameCodeLoinc" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:loinc.display.extension:anzeigenameCodeLoinc.extension">
+      <path value="Composition.section.section.code.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:loinc.display.extension:anzeigenameCodeLoinc.extension:content">
+      <path value="Composition.section.section.code.coding.display.extension.extension" />
+      <sliceName value="content" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:loinc.display.extension:anzeigenameCodeLoinc.extension:content.url">
+      <path value="Composition.section.section.code.coding.display.extension.extension.url" />
+      <fixedUri value="content" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:loinc.display.extension:anzeigenameCodeLoinc.extension:content.value[x]">
+      <path value="Composition.section.section.code.coding.display.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:loinc.display.extension:anzeigenameCodeLoinc.extension:content.value[x]:valueString">
+      <path value="Composition.section.section.code.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+	  <fixedString value="Gestationsdiabetes" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:loinc.display.extension:anzeigenameCodeLoinc.url">
+      <path value="Composition.section.section.code.coding.display.extension.url" />
+      <fixedUri value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.coding:loinc.userSelected">
+      <path value="Composition.section.section.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.code.text">
+      <path value="Composition.section.section.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.author">
+      <path value="Composition.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.focus">
+      <path value="Composition.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.text">
+      <path value="Composition.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.mode">
+      <path value="Composition.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.orderedBy">
+      <path value="Composition.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.entry">
+      <path value="Composition.section.section.entry" />
+      <max value="2" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_oGTT_Diagnosistest|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_oGTT_Pretest|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.entry.reference">
+      <path value="Composition.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.entry.type">
+      <path value="Composition.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.entry.identifier">
+      <path value="Composition.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.entry.display">
+      <path value="Composition.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.emptyReason">
+      <path value="Composition.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:BesondereBefunde.section.section">
+      <path value="Composition.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Beratung">
+      <path value="Composition.section" />
+      <sliceName value="Beratung" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Beratung.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+      <fixedString value="Beratung der Schwangeren" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Beratung.code">
+      <path value="Composition.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Beratung.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Beratung.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Beratung.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Beratung.mode">
+      <path value="Composition.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Beratung.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Beratung.entry">
+      <path value="Composition.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Procedure_Counselling|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_HIV_Test_Performed|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Beratung.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Beratung.entry.type">
+      <path value="Composition.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Beratung.entry.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Beratung.entry.display">
+      <path value="Composition.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Beratung.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Beratung.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AntiDProphylaxe">
+      <path value="Composition.section" />
+      <sliceName value="AntiDProphylaxe" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:AntiDProphylaxe.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+      <fixedString value="Anti-D-Prophylaxe" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:AntiDProphylaxe.code">
+      <path value="Composition.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AntiDProphylaxe.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AntiDProphylaxe.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AntiDProphylaxe.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AntiDProphylaxe.mode">
+      <path value="Composition.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AntiDProphylaxe.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AntiDProphylaxe.entry">
+      <path value="Composition.section.entry" />
+      <min value="1" />
+	  <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Procedure_Anti_D_Prophylaxis|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:AntiDProphylaxe.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:AntiDProphylaxe.entry.type">
+      <path value="Composition.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AntiDProphylaxe.entry.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AntiDProphylaxe.entry.display">
+      <path value="Composition.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AntiDProphylaxe.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:AntiDProphylaxe.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen">
+      <path value="Composition.section" />
+      <sliceName value="Untersuchungen" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+      <fixedString value="Untersuchungen" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.code">
+      <path value="Composition.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.mode">
+      <path value="Composition.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.entry">
+      <path value="Composition.section.entry" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section">
+      <path value="Composition.section.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="title" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz">
+      <path value="Composition.section.section" />
+      <sliceName value="LaboruntersuchungenUndRoetelnschutz" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.title">
+      <path value="Composition.section.section.title" />
+      <min value="1" />
+      <fixedString value="Laboruntersuchungen und Rötelnschutz" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.code">
+      <path value="Composition.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.author">
+      <path value="Composition.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.focus">
+      <path value="Composition.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.text">
+      <path value="Composition.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.mode">
+      <path value="Composition.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.orderedBy">
+      <path value="Composition.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.entry">
+      <path value="Composition.section.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Blood_Group_Serology|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Blood_Group_Serology_Fetus|1.1.0" />
+		<targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Other_Blood_Group_Systems|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Immunization_Status|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.entry.reference">
+      <path value="Composition.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.entry.type">
+      <path value="Composition.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.entry.identifier">
+      <path value="Composition.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.entry.display">
+      <path value="Composition.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.emptyReason">
+      <path value="Composition.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section">
+      <path value="Composition.section.section.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="title" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung">
+      <path value="Composition.section.section.section" />
+      <sliceName value="Laboruntersuchung" />
+	  <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.title">
+      <path value="Composition.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="Laboruntersuchung" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code">
+      <path value="Composition.section.section.section.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code.coding">
+      <path value="Composition.section.section.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code.coding.system">
+      <path value="Composition.section.section.section.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code.coding.version">
+      <path value="Composition.section.section.section.code.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20210731" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code.coding.code">
+      <path value="Composition.section.section.section.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="404684003:363714003=108252007" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code.coding.display">
+      <path value="Composition.section.section.section.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code.coding.display.extension">
+      <path value="Composition.section.section.section.code.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code.coding.display.extension:anzeigenameCodeSnomed">
+      <path value="Composition.section.section.section.code.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code.coding.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code.coding.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension" />
+      <sliceName value="content" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.url">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension.url" />
+      <fixedUri value="content" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <min value="1" />
+	  <fixedString value="Laboruntersuchung" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code.coding.display.extension:anzeigenameCodeSnomed.url">
+      <path value="Composition.section.section.section.code.coding.display.extension.url" />
+      <fixedUri value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code.coding.userSelected">
+      <path value="Composition.section.section.section.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.code.text">
+      <path value="Composition.section.section.section.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.author">
+      <path value="Composition.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.focus">
+      <path value="Composition.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.text">
+      <path value="Composition.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.mode">
+      <path value="Composition.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.orderedBy">
+      <path value="Composition.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.entry">
+      <path value="Composition.section.section.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Examination|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.entry.reference">
+      <path value="Composition.section.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.entry.type">
+      <path value="Composition.section.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.entry.identifier">
+      <path value="Composition.section.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.entry.display">
+      <path value="Composition.section.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.emptyReason">
+      <path value="Composition.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:Laboruntersuchung.section">
+      <path value="Composition.section.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert">
+      <path value="Composition.section.section.section" />
+      <sliceName value="LaboruntersuchungMaskiert" />
+	  <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.title">
+      <path value="Composition.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="Laboruntersuchung, Ergebnis maskiert" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code">
+      <path value="Composition.section.section.section.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code.coding">
+      <path value="Composition.section.section.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code.coding.system">
+      <path value="Composition.section.section.section.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code.coding.version">
+      <path value="Composition.section.section.section.code.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20210731" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code.coding.code">
+      <path value="Composition.section.section.section.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="129125009:363589002=(108252007:363702006=442228008)" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code.coding.display">
+      <path value="Composition.section.section.section.code.coding.display" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code.coding.display.extension">
+      <path value="Composition.section.section.section.code.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code.coding.display.extension:anzeigenameCodeSnomed">
+      <path value="Composition.section.section.section.code.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code.coding.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code.coding.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension" />
+      <sliceName value="content" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.url">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension.url" />
+      <fixedUri value="content" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <min value="1" />
+	  <fixedString value="Laboruntersuchung, Ergebnis maskiert" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code.coding.display.extension:anzeigenameCodeSnomed.url">
+      <path value="Composition.section.section.section.code.coding.display.extension.url" />
+      <fixedUri value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code.coding.userSelected">
+      <path value="Composition.section.section.section.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.code.text">
+      <path value="Composition.section.section.section.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.author">
+      <path value="Composition.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.focus">
+      <path value="Composition.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.text">
+      <path value="Composition.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.mode">
+      <path value="Composition.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.orderedBy">
+      <path value="Composition.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.entry">
+      <path value="Composition.section.section.section.entry" />
+	  <max value="1"/>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Examination_Masked|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.entry.reference">
+      <path value="Composition.section.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.entry.type">
+      <path value="Composition.section.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.entry.identifier">
+      <path value="Composition.section.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.entry.display">
+      <path value="Composition.section.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.emptyReason">
+      <path value="Composition.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:LaboruntersuchungenUndRoetelnschutz.section:LaboruntersuchungMaskiert.section">
+      <path value="Composition.section.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Gravidogramm">
+      <path value="Composition.section.section" />
+      <sliceName value="Gravidogramm" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Gravidogramm.title">
+      <path value="Composition.section.section.title" />
+      <min value="1" />
+      <fixedString value="Gravidogramm" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Gravidogramm.code">
+      <path value="Composition.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Gravidogramm.author">
+      <path value="Composition.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Gravidogramm.focus">
+      <path value="Composition.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Gravidogramm.text">
+      <path value="Composition.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Gravidogramm.mode">
+      <path value="Composition.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Gravidogramm.orderedBy">
+      <path value="Composition.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Gravidogramm.entry">
+      <path value="Composition.section.section.entry" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_ClinicalImpression_Pregnancy_Chart_Entry|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Gravidogramm.entry.reference">
+      <path value="Composition.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Gravidogramm.entry.type">
+      <path value="Composition.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Gravidogramm.entry.identifier">
+      <path value="Composition.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Gravidogramm.entry.display">
+      <path value="Composition.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Gravidogramm.emptyReason">
+      <path value="Composition.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Gravidogramm.section">
+      <path value="Composition.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall">
+      <path value="Composition.section.section" />
+      <sliceName value="Ultraschall" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.title">
+      <path value="Composition.section.section.title" />
+      <min value="1" />
+      <fixedString value="Ultraschall" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.code">
+      <path value="Composition.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.author">
+      <path value="Composition.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.focus">
+      <path value="Composition.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.text">
+      <path value="Composition.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.mode">
+      <path value="Composition.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.orderedBy">
+      <path value="Composition.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.entry">
+      <path value="Composition.section.section.entry" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Ultrasound|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.entry.reference">
+      <path value="Composition.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.entry.type">
+      <path value="Composition.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.entry.identifier">
+      <path value="Composition.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.entry.display">
+      <path value="Composition.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.emptyReason">
+      <path value="Composition.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section">
+      <path value="Composition.section.section.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="title" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_I">
+      <path value="Composition.section.section.section" />
+      <sliceName value="Ultraschall_I" />
+      <max value="2" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_I.title">
+      <path value="Composition.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="I. Screening" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_I.code">
+      <path value="Composition.section.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_I.author">
+      <path value="Composition.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_I.focus">
+      <path value="Composition.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_I.text">
+      <path value="Composition.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_I.mode">
+      <path value="Composition.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_I.orderedBy">
+      <path value="Composition.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_I.entry">
+      <path value="Composition.section.section.section.entry" />
+      <min value="1" />
+	  <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_DiagnosticReport_Ultrasound_I|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_I.entry.reference">
+      <path value="Composition.section.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_I.entry.type">
+      <path value="Composition.section.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_I.entry.identifier">
+      <path value="Composition.section.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_I.entry.display">
+      <path value="Composition.section.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_I.emptyReason">
+      <path value="Composition.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_I.section">
+      <path value="Composition.section.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_II">
+      <path value="Composition.section.section.section" />
+      <sliceName value="Ultraschall_II" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_II.title">
+      <path value="Composition.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="II. Screening" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_II.code">
+      <path value="Composition.section.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_II.author">
+      <path value="Composition.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_II.focus">
+      <path value="Composition.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_II.text">
+      <path value="Composition.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_II.mode">
+      <path value="Composition.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_II.orderedBy">
+      <path value="Composition.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_II.entry">
+      <path value="Composition.section.section.section.entry" />
+      <min value="1" />
+	  <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_DiagnosticReport_Ultrasound_II|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_II.entry.reference">
+      <path value="Composition.section.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_II.entry.type">
+      <path value="Composition.section.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_II.entry.identifier">
+      <path value="Composition.section.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_II.entry.display">
+      <path value="Composition.section.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_II.emptyReason">
+      <path value="Composition.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_II.section">
+      <path value="Composition.section.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_III">
+      <path value="Composition.section.section.section" />
+      <sliceName value="Ultraschall_III" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_III.title">
+      <path value="Composition.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="III. Screening" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_III.code">
+      <path value="Composition.section.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_III.author">
+      <path value="Composition.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_III.focus">
+      <path value="Composition.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_III.text">
+      <path value="Composition.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_III.mode">
+      <path value="Composition.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_III.orderedBy">
+      <path value="Composition.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_III.entry">
+      <path value="Composition.section.section.section.entry" />
+	  <min value="1" />
+	  <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_DiagnosticReport_Ultrasound_III|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_III.entry.reference">
+      <path value="Composition.section.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_III.entry.type">
+      <path value="Composition.section.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_III.entry.identifier">
+      <path value="Composition.section.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_III.entry.display">
+      <path value="Composition.section.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_III.emptyReason">
+      <path value="Composition.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:Ultraschall_III.section">
+      <path value="Composition.section.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen">
+      <path value="Composition.section.section.section" />
+      <sliceName value="WeitereUltraschallUntersuchungen" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.title">
+      <path value="Composition.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="Weitere Ultraschall-Untersuchungen" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code">
+      <path value="Composition.section.section.section.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code.coding">
+      <path value="Composition.section.section.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code.coding.system">
+      <path value="Composition.section.section.section.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code.coding.version">
+      <path value="Composition.section.section.section.code.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20210731" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code.coding.code">
+      <path value="Composition.section.section.section.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="169220006" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code.coding.display">
+      <path value="Composition.section.section.section.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code.coding.display.extension">
+      <path value="Composition.section.section.section.code.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code.coding.display.extension:anzeigenameCodeSnomed">
+      <path value="Composition.section.section.section.code.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code.coding.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code.coding.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension" />
+      <sliceName value="content" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.url">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension.url" />
+      <fixedUri value="content" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <min value="1" />
+	  <fixedString value="Weitere Ultraschall-Untersuchungen" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code.coding.display.extension:anzeigenameCodeSnomed.url">
+      <path value="Composition.section.section.section.code.coding.display.extension.url" />
+      <fixedUri value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code.coding.userSelected">
+      <path value="Composition.section.section.section.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.code.text">
+      <path value="Composition.section.section.section.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.author">
+      <path value="Composition.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.focus">
+      <path value="Composition.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.text">
+      <path value="Composition.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.mode">
+      <path value="Composition.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.orderedBy">
+      <path value="Composition.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.entry">
+      <path value="Composition.section.section.section.entry" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Other_Ultrasound_Studies|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.entry.reference">
+      <path value="Composition.section.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.entry.type">
+      <path value="Composition.section.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.entry.identifier">
+      <path value="Composition.section.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.entry.display">
+      <path value="Composition.section.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.emptyReason">
+      <path value="Composition.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Ultraschall.section:WeitereUltraschallUntersuchungen.section">
+      <path value="Composition.section.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Cardiotokografie">
+      <path value="Composition.section.section" />
+      <sliceName value="Cardiotokografie" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Cardiotokografie.title">
+      <path value="Composition.section.section.title" />
+      <min value="1" />
+      <fixedString value="Cardiotokografie" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Cardiotokografie.code">
+      <path value="Composition.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Cardiotokografie.author">
+      <path value="Composition.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Cardiotokografie.focus">
+      <path value="Composition.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Cardiotokografie.text">
+      <path value="Composition.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Cardiotokografie.mode">
+      <path value="Composition.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Cardiotokografie.orderedBy">
+      <path value="Composition.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Cardiotokografie.entry">
+      <path value="Composition.section.section.entry" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Cardiotocography|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Cardiotokografie.entry.reference">
+      <path value="Composition.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Cardiotokografie.entry.type">
+      <path value="Composition.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Cardiotokografie.entry.identifier">
+      <path value="Composition.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Cardiotokografie.entry.display">
+      <path value="Composition.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Cardiotokografie.emptyReason">
+      <path value="Composition.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Cardiotokografie.section">
+      <path value="Composition.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise">
+      <path value="Composition.section.section" />
+      <sliceName value="Epikrise" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.title">
+      <path value="Composition.section.section.title" />
+      <min value="1" />
+      <fixedString value="Abschluss-Untersuchung/Epikrise" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.code">
+      <path value="Composition.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.author">
+      <path value="Composition.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.focus">
+      <path value="Composition.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.text">
+      <path value="Composition.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.mode">
+      <path value="Composition.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.orderedBy">
+      <path value="Composition.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.entry">
+      <path value="Composition.section.section.entry" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.entry.reference">
+      <path value="Composition.section.section.entry.reference" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.entry.type">
+      <path value="Composition.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.entry.identifier">
+      <path value="Composition.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.entry.display">
+      <path value="Composition.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.emptyReason">
+      <path value="Composition.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section">
+      <path value="Composition.section.section.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="title" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Schwangerschaft">
+      <path value="Composition.section.section.section" />
+      <sliceName value="Schwangerschaft" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Schwangerschaft.title">
+      <path value="Composition.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="Schwangerschaft" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Schwangerschaft.code">
+      <path value="Composition.section.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Schwangerschaft.author">
+      <path value="Composition.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Schwangerschaft.focus">
+      <path value="Composition.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Schwangerschaft.text">
+      <path value="Composition.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Schwangerschaft.mode">
+      <path value="Composition.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Schwangerschaft.orderedBy">
+      <path value="Composition.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Schwangerschaft.entry">
+      <path value="Composition.section.section.section.entry" />
+      <min value="1" />
+	  <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_ClinicalImpression_Pregnancy_Examination_Discharge_Summary|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Schwangerschaft.entry.reference">
+      <path value="Composition.section.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Schwangerschaft.entry.type">
+      <path value="Composition.section.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Schwangerschaft.entry.identifier">
+      <path value="Composition.section.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Schwangerschaft.entry.display">
+      <path value="Composition.section.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Schwangerschaft.emptyReason">
+      <path value="Composition.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Schwangerschaft.section">
+      <path value="Composition.section.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt">
+      <path value="Composition.section.section.section" />
+      <sliceName value="Geburt" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.title">
+      <path value="Composition.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="Geburt" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code">
+      <path value="Composition.section.section.section.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code.coding">
+      <path value="Composition.section.section.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code.coding.system">
+      <path value="Composition.section.section.section.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code.coding.version">
+      <path value="Composition.section.section.section.code.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20210731" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code.coding.code">
+      <path value="Composition.section.section.section.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="118215003" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code.coding.display">
+      <path value="Composition.section.section.section.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code.coding.display.extension">
+      <path value="Composition.section.section.section.code.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code.coding.display.extension:anzeigenameCodeSnomed">
+      <path value="Composition.section.section.section.code.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code.coding.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code.coding.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension" />
+      <sliceName value="content" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.url">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension.url" />
+      <fixedUri value="content" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="Composition.section.section.section.code.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <min value="1" />
+	  <fixedString value="Geburt" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code.coding.display.extension:anzeigenameCodeSnomed.url">
+      <path value="Composition.section.section.section.code.coding.display.extension.url" />
+      <fixedUri value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code.coding.userSelected">
+      <path value="Composition.section.section.section.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.code.text">
+      <path value="Composition.section.section.section.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.author">
+      <path value="Composition.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.focus">
+      <path value="Composition.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.text">
+      <path value="Composition.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.mode">
+      <path value="Composition.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.orderedBy">
+      <path value="Composition.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.entry">
+      <path value="Composition.section.section.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_ClinicalImpression_Birth_Examination_Delivery_Information|1.1.0" />
+      </type>
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.entry.reference">
+      <path value="Composition.section.section.section.entry.reference" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.entry.type">
+      <path value="Composition.section.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.entry.identifier">
+      <path value="Composition.section.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.entry.display">
+      <path value="Composition.section.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.emptyReason">
+      <path value="Composition.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section">
+      <path value="Composition.section.section.section.section" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.title">
+      <path value="Composition.section.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="Angaben zum Kind" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.code">
+      <path value="Composition.section.section.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.author">
+      <path value="Composition.section.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.focus">
+      <path value="Composition.section.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.text">
+      <path value="Composition.section.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.mode">
+      <path value="Composition.section.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.orderedBy">
+      <path value="Composition.section.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.entry">
+      <path value="Composition.section.section.section.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_ClinicalImpression_Birth_Examination_Child_Information|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.entry.reference">
+      <path value="Composition.section.section.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.entry.type">
+      <path value="Composition.section.section.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.entry.identifier">
+      <path value="Composition.section.section.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.entry.display">
+      <path value="Composition.section.section.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.emptyReason">
+      <path value="Composition.section.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section">
+      <path value="Composition.section.section.section.section.section" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.title">
+      <path value="Composition.section.section.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="Apgar-Score" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code">
+      <path value="Composition.section.section.section.section.section.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code.coding">
+      <path value="Composition.section.section.section.section.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code.coding.system">
+      <path value="Composition.section.section.section.section.section.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code.coding.version">
+      <path value="Composition.section.section.section.section.section.code.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20210731" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code.coding.code">
+      <path value="Composition.section.section.section.section.section.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="249228009" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code.coding.display">
+      <path value="Composition.section.section.section.section.section.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code.coding.display.extension">
+      <path value="Composition.section.section.section.section.section.code.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code.coding.display.extension:anzeigenameCodeSnomed">
+      <path value="Composition.section.section.section.section.section.code.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code.coding.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="Composition.section.section.section.section.section.code.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code.coding.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="Composition.section.section.section.section.section.code.coding.display.extension.extension" />
+      <sliceName value="content" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.url">
+      <path value="Composition.section.section.section.section.section.code.coding.display.extension.extension.url" />
+      <fixedUri value="content" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]">
+      <path value="Composition.section.section.section.section.section.code.coding.display.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="Composition.section.section.section.section.section.code.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <min value="1" />
+	  <fixedString value="Apgar-Score" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code.coding.display.extension:anzeigenameCodeSnomed.url">
+      <path value="Composition.section.section.section.section.section.code.coding.display.extension.url" />
+      <fixedUri value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code.coding.userSelected">
+      <path value="Composition.section.section.section.section.section.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.code.text">
+      <path value="Composition.section.section.section.section.section.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.author">
+      <path value="Composition.section.section.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.focus">
+      <path value="Composition.section.section.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.text">
+      <path value="Composition.section.section.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.mode">
+      <path value="Composition.section.section.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.orderedBy">
+      <path value="Composition.section.section.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.entry">
+      <path value="Composition.section.section.section.section.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Apgar_Score|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.entry.reference">
+      <path value="Composition.section.section.section.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.entry.type">
+      <path value="Composition.section.section.section.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.entry.identifier">
+      <path value="Composition.section.section.section.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.entry.display">
+      <path value="Composition.section.section.section.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.emptyReason">
+      <path value="Composition.section.section.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Geburt.section.section.section">
+      <path value="Composition.section.section.section.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett">
+      <path value="Composition.section.section.section" />
+      <sliceName value="Wochenbett" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.title">
+      <path value="Composition.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="Erste Untersuchung nach Entbindung (Wochenbett)" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.code">
+      <path value="Composition.section.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.author">
+      <path value="Composition.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.focus">
+      <path value="Composition.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.text">
+      <path value="Composition.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.mode">
+      <path value="Composition.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.orderedBy">
+      <path value="Composition.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.entry">
+      <path value="Composition.section.section.section.entry" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.emptyReason">
+      <path value="Composition.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section">
+      <path value="Composition.section.section.section.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="title" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <max value="2" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZurMutter">
+      <path value="Composition.section.section.section.section" />
+      <sliceName value="AngabenZurMutter" />
+	  <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZurMutter.title">
+      <path value="Composition.section.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="Angaben zur Mutter" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZurMutter.code">
+      <path value="Composition.section.section.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZurMutter.author">
+      <path value="Composition.section.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZurMutter.focus">
+      <path value="Composition.section.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZurMutter.text">
+      <path value="Composition.section.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZurMutter.mode">
+      <path value="Composition.section.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZurMutter.orderedBy">
+      <path value="Composition.section.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZurMutter.entry">
+      <path value="Composition.section.section.section.section.entry" />
+	  <max value="1" />
+	  <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_ClinicalImpression_First_Examination_After_Childbirth_Mother|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZurMutter.entry.reference">
+      <path value="Composition.section.section.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZurMutter.entry.type">
+      <path value="Composition.section.section.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZurMutter.entry.identifier">
+      <path value="Composition.section.section.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZurMutter.entry.display">
+      <path value="Composition.section.section.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZurMutter.emptyReason">
+      <path value="Composition.section.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZurMutter.section">
+      <path value="Composition.section.section.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZumKind">
+      <path value="Composition.section.section.section.section" />
+      <sliceName value="AngabenZumKind" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZumKind.title">
+      <path value="Composition.section.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="Angaben zum Kind" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZumKind.code">
+      <path value="Composition.section.section.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZumKind.author">
+      <path value="Composition.section.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZumKind.focus">
+      <path value="Composition.section.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZumKind.text">
+      <path value="Composition.section.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZumKind.mode">
+      <path value="Composition.section.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZumKind.orderedBy">
+      <path value="Composition.section.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZumKind.entry">
+      <path value="Composition.section.section.section.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_ClinicalImpression_First_Examination_After_Childbirth_Child|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZumKind.entry.reference">
+      <path value="Composition.section.section.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZumKind.entry.type">
+      <path value="Composition.section.section.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZumKind.entry.identifier">
+      <path value="Composition.section.section.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZumKind.entry.display">
+      <path value="Composition.section.section.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZumKind.emptyReason">
+      <path value="Composition.section.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:Wochenbett.section:AngabenZumKind.section">
+      <path value="Composition.section.section.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung">
+      <path value="Composition.section.section.section" />
+      <sliceName value="ZweiteUntersuchungNachEntbindung" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.title">
+      <path value="Composition.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="Zweite Untersuchung nach Entbindung" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.code">
+      <path value="Composition.section.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.author">
+      <path value="Composition.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.focus">
+      <path value="Composition.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.text">
+      <path value="Composition.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.mode">
+      <path value="Composition.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.orderedBy">
+      <path value="Composition.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.entry">
+      <path value="Composition.section.section.section.entry" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_ClinicalImpression_Second_Examination_After_Childbirth|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.entry.reference">
+      <path value="Composition.section.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.entry.type">
+      <path value="Composition.section.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.entry.identifier">
+      <path value="Composition.section.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.entry.display">
+      <path value="Composition.section.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.emptyReason">
+      <path value="Composition.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section">
+      <path value="Composition.section.section.section.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="title" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <max value="2" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZurMutter">
+      <path value="Composition.section.section.section.section" />
+      <sliceName value="AngabenZurMutter" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZurMutter.title">
+      <path value="Composition.section.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="Angaben zur Mutter" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZurMutter.code">
+      <path value="Composition.section.section.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZurMutter.author">
+      <path value="Composition.section.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZurMutter.focus">
+      <path value="Composition.section.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZurMutter.text">
+      <path value="Composition.section.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZurMutter.mode">
+      <path value="Composition.section.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZurMutter.orderedBy">
+      <path value="Composition.section.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZurMutter.entry">
+      <path value="Composition.section.section.section.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Gynecological_Finding_Normal|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Urine|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Urine_Sugar|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Urine_Protein|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Blood_Pressure|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Breastfeeding_Behavior|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZurMutter.entry.reference">
+      <path value="Composition.section.section.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZurMutter.entry.type">
+      <path value="Composition.section.section.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZurMutter.entry.identifier">
+      <path value="Composition.section.section.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZurMutter.entry.display">
+      <path value="Composition.section.section.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZurMutter.emptyReason">
+      <path value="Composition.section.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZurMutter.section">
+      <path value="Composition.section.section.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind">
+      <path value="Composition.section.section.section.section" />
+      <sliceName value="AngabenZumKind" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.title">
+      <path value="Composition.section.section.section.section.title" />
+      <min value="1" />
+      <fixedString value="Angaben zum Kind" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code">
+      <path value="Composition.section.section.section.section.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code.coding">
+      <path value="Composition.section.section.section.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code.coding.system">
+      <path value="Composition.section.section.section.section.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code.coding.version">
+      <path value="Composition.section.section.section.section.code.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20210731" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code.coding.code">
+      <path value="Composition.section.section.section.section.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="118188004" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code.coding.display">
+      <path value="Composition.section.section.section.section.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code.coding.display.extension">
+      <path value="Composition.section.section.section.section.code.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code.coding.display.extension:anzeigenameCodeSnomed">
+      <path value="Composition.section.section.section.section.code.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code.coding.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="Composition.section.section.section.section.code.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code.coding.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="Composition.section.section.section.section.code.coding.display.extension.extension" />
+      <sliceName value="content" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.url">
+      <path value="Composition.section.section.section.section.code.coding.display.extension.extension.url" />
+      <fixedUri value="content" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]">
+      <path value="Composition.section.section.section.section.code.coding.display.extension.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="Composition.section.section.section.section.code.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <min value="1" />
+	  <fixedString value="Angaben zum Kind" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code.coding.display.extension:anzeigenameCodeSnomed.url">
+      <path value="Composition.section.section.section.section.code.coding.display.extension.url" />
+      <fixedUri value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code.coding.userSelected">
+      <path value="Composition.section.section.section.section.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.code.text">
+      <path value="Composition.section.section.section.section.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.author">
+      <path value="Composition.section.section.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.focus">
+      <path value="Composition.section.section.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.text">
+      <path value="Composition.section.section.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.mode">
+      <path value="Composition.section.section.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.orderedBy">
+      <path value="Composition.section.section.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.entry">
+      <path value="Composition.section.section.section.section.entry" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_U3_Performed|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Child_Is_Healthy|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Need_Of_Treatment_U3|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.entry.reference">
+      <path value="Composition.section.section.section.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.entry.type">
+      <path value="Composition.section.section.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.entry.identifier">
+      <path value="Composition.section.section.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.entry.display">
+      <path value="Composition.section.section.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.emptyReason">
+      <path value="Composition.section.section.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Untersuchungen.section:Epikrise.section:ZweiteUntersuchungNachEntbindung.section:AngabenZumKind.section">
+      <path value="Composition.section.section.section.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:StationaereBehandlung">
+      <path value="Composition.section" />
+      <sliceName value="StationaereBehandlung" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:StationaereBehandlung.title">
+      <path value="Composition.section.title" />
+      <min value="1" />
+      <fixedString value="Stationäre Behandlung" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:StationaereBehandlung.code">
+      <path value="Composition.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:StationaereBehandlung.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:StationaereBehandlung.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:StationaereBehandlung.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:StationaereBehandlung.mode">
+      <path value="Composition.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:StationaereBehandlung.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:StationaereBehandlung.entry">
+      <path value="Composition.section.entry" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Encounter_Inpatient_Treatment|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Organization|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:StationaereBehandlung.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:StationaereBehandlung.entry.type">
+      <path value="Composition.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:StationaereBehandlung.entry.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:StationaereBehandlung.entry.display">
+      <path value="Composition.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:StationaereBehandlung.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:StationaereBehandlung.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

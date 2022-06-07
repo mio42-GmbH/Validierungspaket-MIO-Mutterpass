@@ -1,0 +1,378 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_ClinicalImpression_Birth_Examination_Child_Information" />
+  <version value="1.1.0" />
+  <name value="KBV_PR_MIO_MR_ClinicalImpression_Birth_Examination_Child_Information" />
+  <status value="active" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="ClinicalImpression" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/ClinicalImpression" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="ClinicalImpression">
+      <path value="ClinicalImpression" />
+      <definition value="In diesem Profil können Angaben zur Geburt eines Kindes dokumentiert werden." />
+    </element>
+    <element id="ClinicalImpression.meta">
+      <path value="ClinicalImpression.meta" />
+      <min value="1" />
+    </element>
+    <element id="ClinicalImpression.meta.versionId">
+      <path value="ClinicalImpression.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.meta.lastUpdated">
+      <path value="ClinicalImpression.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.meta.source">
+      <path value="ClinicalImpression.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.meta.profile">
+      <path value="ClinicalImpression.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_ClinicalImpression_Birth_Examination_Child_Information|1.1.0" />
+    </element>
+    <element id="ClinicalImpression.meta.security">
+      <path value="ClinicalImpression.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.meta.tag">
+      <path value="ClinicalImpression.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.implicitRules">
+      <path value="ClinicalImpression.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.language">
+      <path value="ClinicalImpression.language" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.text">
+      <path value="ClinicalImpression.text" />
+      <definition value="In diesem Element können die, in der Instanz, enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind." />
+    </element>
+    <element id="ClinicalImpression.contained">
+      <path value="ClinicalImpression.contained" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.identifier">
+      <path value="ClinicalImpression.identifier" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.status">
+      <path value="ClinicalImpression.status" />
+      <fixedCode value="completed" />
+    </element>
+    <element id="ClinicalImpression.statusReason">
+      <path value="ClinicalImpression.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.code">
+      <path value="ClinicalImpression.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.code.coding">
+      <path value="ClinicalImpression.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.code.coding.system">
+      <path value="ClinicalImpression.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="ClinicalImpression.code.coding.version">
+      <path value="ClinicalImpression.code.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20210731" />
+    </element>
+    <element id="ClinicalImpression.code.coding.code">
+      <path value="ClinicalImpression.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="118188004" />
+    </element>
+    <element id="ClinicalImpression.code.coding.display">
+      <path value="ClinicalImpression.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="ClinicalImpression.code.coding.display.extension">
+      <path value="ClinicalImpression.code.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="ClinicalImpression.code.coding.display.extension:anzeigenameCodeSnomed">
+      <path value="ClinicalImpression.code.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.code.coding.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="ClinicalImpression.code.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="ClinicalImpression.code.coding.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="ClinicalImpression.code.coding.display.extension.extension" />
+      <sliceName value="content" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]">
+      <path value="ClinicalImpression.code.coding.display.extension.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="ClinicalImpression.code.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <min value="1" />
+      <fixedString value="Angaben zum Kind" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.code.coding.userSelected">
+      <path value="ClinicalImpression.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.code.text">
+      <path value="ClinicalImpression.code.text" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.description">
+      <path value="ClinicalImpression.description" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.subject">
+      <path value="ClinicalImpression.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Patient_Child|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.subject.reference">
+      <path value="ClinicalImpression.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.subject.type">
+      <path value="ClinicalImpression.subject.type" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.subject.identifier">
+      <path value="ClinicalImpression.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.subject.display">
+      <path value="ClinicalImpression.subject.display" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.encounter">
+      <path value="ClinicalImpression.encounter" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Encounter_General|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.encounter.reference">
+      <path value="ClinicalImpression.encounter.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.encounter.type">
+      <path value="ClinicalImpression.encounter.type" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.encounter.identifier">
+      <path value="ClinicalImpression.encounter.identifier" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.encounter.display">
+      <path value="ClinicalImpression.encounter.display" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.effective[x]">
+      <path value="ClinicalImpression.effective[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.effective[x]:effectiveDateTime">
+      <path value="ClinicalImpression.effectiveDateTime" />
+      <sliceName value="effectiveDateTime" />
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.date">
+      <path value="ClinicalImpression.date" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.assessor">
+      <path value="ClinicalImpression.assessor" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Practitioner|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.assessor.reference">
+      <path value="ClinicalImpression.assessor.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.assessor.type">
+      <path value="ClinicalImpression.assessor.type" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.assessor.identifier">
+      <path value="ClinicalImpression.assessor.identifier" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.assessor.display">
+      <path value="ClinicalImpression.assessor.display" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.previous">
+      <path value="ClinicalImpression.previous" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.problem">
+      <path value="ClinicalImpression.problem" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.investigation">
+      <path value="ClinicalImpression.investigation" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.investigation.code">
+      <path value="ClinicalImpression.investigation.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.investigation.code.coding">
+      <path value="ClinicalImpression.investigation.code.coding" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.investigation.code.text">
+      <path value="ClinicalImpression.investigation.code.text" />
+      <min value="1" />
+      <fixedString value="Angaben zum Kind" />
+    </element>
+    <element id="ClinicalImpression.investigation.item">
+      <path value="ClinicalImpression.investigation.item" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Live_Birth|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Birth_Mode|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Child_Position_At_Birth|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Weight_Child|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Head_Circumference|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Birth_Height|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Apgar_Score|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_pH_Value_Umbilical_Artery|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Malformation|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.investigation.item.reference">
+      <path value="ClinicalImpression.investigation.item.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="ClinicalImpression.investigation.item.type">
+      <path value="ClinicalImpression.investigation.item.type" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.investigation.item.identifier">
+      <path value="ClinicalImpression.investigation.item.identifier" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.investigation.item.display">
+      <path value="ClinicalImpression.investigation.item.display" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.protocol">
+      <path value="ClinicalImpression.protocol" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.summary">
+      <path value="ClinicalImpression.summary" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.finding">
+      <path value="ClinicalImpression.finding" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.prognosisCodeableConcept">
+      <path value="ClinicalImpression.prognosisCodeableConcept" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.prognosisReference">
+      <path value="ClinicalImpression.prognosisReference" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.supportingInfo">
+      <path value="ClinicalImpression.supportingInfo" />
+      <max value="0" />
+    </element>
+    <element id="ClinicalImpression.note">
+      <path value="ClinicalImpression.note" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,541 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Determination_Of_Pregnancy" />
+  <version value="1.1.0" />
+  <name value="KBV_PR_MIO_MR_Observation_Determination_Of_Pregnancy" />
+  <status value="active" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="sct-concept" />
+    <uri value="http://snomed.info/conceptdomain" />
+    <name value="SNOMED CT Concept Domain Binding" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="sct-attr" />
+    <uri value="http://snomed.org/attributebinding" />
+    <name value="SNOMED CT Attribute Binding" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Observation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Observation">
+      <path value="Observation" />
+      <definition value="In diesem Profil kann die Feststellung der Schwangerschaft dokumentiert werden." />
+    </element>
+    <element id="Observation.meta">
+      <path value="Observation.meta" />
+      <min value="1" />
+    </element>
+    <element id="Observation.meta.versionId">
+      <path value="Observation.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="Observation.meta.lastUpdated">
+      <path value="Observation.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="Observation.meta.source">
+      <path value="Observation.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="Observation.meta.profile">
+      <path value="Observation.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Determination_Of_Pregnancy|1.1.0" />
+    </element>
+    <element id="Observation.meta.security">
+      <path value="Observation.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="Observation.meta.tag">
+      <path value="Observation.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="Observation.implicitRules">
+      <path value="Observation.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="Observation.language">
+      <path value="Observation.language" />
+      <max value="0" />
+    </element>
+    <element id="Observation.text">
+      <path value="Observation.text" />
+      <max value="0" />
+    </element>
+    <element id="Observation.contained">
+      <path value="Observation.contained" />
+      <max value="0" />
+    </element>
+    <element id="Observation.identifier">
+      <path value="Observation.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Observation.basedOn">
+      <path value="Observation.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="Observation.partOf">
+      <path value="Observation.partOf" />
+      <max value="0" />
+    </element>
+    <element id="Observation.status">
+      <path value="Observation.status" />
+	  <fixedCode value="final" />
+    </element>
+    <element id="Observation.category">
+      <path value="Observation.category" />
+      <max value="0" />
+    </element>
+    <element id="Observation.code">
+      <path value="Observation.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding">
+      <path value="Observation.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding.system">
+      <path value="Observation.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Observation.code.coding.version">
+      <path value="Observation.code.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20210731" />
+    </element>
+    <element id="Observation.code.coding.code">
+      <path value="Observation.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="1156894007" />
+    </element>
+    <element id="Observation.code.coding.display">
+      <path value="Observation.code.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Observation.code.coding.display.extension">
+      <path value="Observation.code.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Observation.code.coding.display.extension:anzeigenameCodeSnomed">
+      <path value="Observation.code.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="Observation.code.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Observation.code.coding.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="Observation.code.coding.display.extension.extension" />
+      <sliceName value="content" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]">
+      <path value="Observation.code.coding.display.extension.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="Observation.code.coding.display.extension.extension.valueString" />
+      <sliceName value="valueString" />
+      <min value="1" />
+      <fixedString value="Schwangerschaft festgestellt am/in der" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.code.coding.userSelected">
+      <path value="Observation.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Observation.code.text">
+      <path value="Observation.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Observation.subject">
+      <path value="Observation.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Patient_Mother|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.subject.reference">
+      <path value="Observation.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.subject.type">
+      <path value="Observation.subject.type" />
+      <max value="0" />
+    </element>
+    <element id="Observation.subject.identifier">
+      <path value="Observation.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Observation.subject.display">
+      <path value="Observation.subject.display" />
+      <max value="0" />
+    </element>
+    <element id="Observation.focus">
+      <path value="Observation.focus" />
+      <max value="0" />
+    </element>
+    <element id="Observation.encounter">
+      <path value="Observation.encounter" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Encounter_General|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.encounter.reference">
+      <path value="Observation.encounter.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.encounter.type">
+      <path value="Observation.encounter.type" />
+      <max value="0" />
+    </element>
+    <element id="Observation.encounter.identifier">
+      <path value="Observation.encounter.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Observation.encounter.display">
+      <path value="Observation.encounter.display" />
+      <max value="0" />
+    </element>
+    <element id="Observation.effective[x]">
+      <path value="Observation.effective[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime">
+      <path value="Observation.effective[x]" />
+      <sliceName value="effectiveDateTime" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension">
+      <path value="Observation.effective[x].extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt">
+      <path value="Observation.effective[x].extension" />
+      <sliceName value="schwangerschaftszeitpunkt" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_MR_Pregnancy_Week_And_Day" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension">
+      <path value="Observation.effective[x].extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt">
+      <path value="Observation.effective[x].extension.extension" />
+      <sliceName value="schwangerschaftszeitpunkt" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension">
+      <path value="Observation.effective[x].extension.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:schwangerschaftswoche">
+      <path value="Observation.effective[x].extension.extension.extension" />
+      <sliceName value="schwangerschaftswoche" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:schwangerschaftswoche.value[x]">
+      <path value="Observation.effective[x].extension.extension.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:schwangerschaftswoche.value[x]:valueQuantity">
+      <path value="Observation.effective[x].extension.extension.extension.value[x]" />
+      <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:ergaenzendeTage">
+      <path value="Observation.effective[x].extension.extension.extension" />
+      <sliceName value="ergaenzendeTage" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:ergaenzendeTage.value[x]">
+      <path value="Observation.effective[x].extension.extension.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:ergaenzendeTage.value[x]:valueQuantity">
+      <path value="Observation.effective[x].extension.extension.extension.value[x]" />
+      <sliceName value="valueQuantity" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:korrektur">
+      <path value="Observation.effective[x].extension.extension.extension" />
+      <sliceName value="korrektur" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:korrektur.value[x]">
+      <path value="Observation.effective[x].extension.extension.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:korrektur.value[x]:valueBoolean">
+      <path value="Observation.effective[x].extension.extension.extension.value[x]" />
+      <sliceName value="valueBoolean" />
+      <fixedBoolean value="false" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:kode">
+      <path value="Observation.effective[x].extension.extension.extension" />
+      <sliceName value="kode" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:kode.value[x]">
+      <path value="Observation.effective[x].extension.extension.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:kode.value[x]:valueCodeableConcept">
+      <path value="Observation.effective[x].extension.extension.extension.value[x]" />
+      <sliceName value="valueCodeableConcept" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:kode.value[x]:valueCodeableConcept.coding">
+      <path value="Observation.effective[x].extension.extension.extension.value[x].coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:kode.value[x]:valueCodeableConcept.coding.code">
+      <path value="Observation.effective[x].extension.extension.extension.value[x].coding.code" />
+      <fixedCode value="1156738004" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:kode.value[x]:valueCodeableConcept.coding.display">
+      <path value="Observation.effective[x].extension.extension.extension.value[x].coding.display" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:kode.value[x]:valueCodeableConcept.coding.display.extension">
+      <path value="Observation.effective[x].extension.extension.extension.value[x].coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:kode.value[x]:valueCodeableConcept.coding.display.extension:anzeigenameCodeSnomed">
+      <path value="Observation.effective[x].extension.extension.extension.value[x].coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:kode.value[x]:valueCodeableConcept.coding.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="Observation.effective[x].extension.extension.extension.value[x].coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:kode.value[x]:valueCodeableConcept.coding.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="Observation.effective[x].extension.extension.extension.value[x].coding.display.extension.extension" />
+      <sliceName value="content" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:kode.value[x]:valueCodeableConcept.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]">
+      <path value="Observation.effective[x].extension.extension.extension.value[x].coding.display.extension.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunkt.extension:kode.value[x]:valueCodeableConcept.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="Observation.effective[x].extension.extension.extension.value[x].coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <min value="1" />
+      <fixedString value="Schwangerschaftswoche+Tage" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.effective[x]:effectiveDateTime.extension:schwangerschaftszeitpunkt.extension:schwangerschaftszeitpunktKorrigiert">
+      <path value="Observation.effective[x].extension.extension" />
+      <sliceName value="schwangerschaftszeitpunktKorrigiert" />
+      <max value="0" />
+    </element>
+    <element id="Observation.issued">
+      <path value="Observation.issued" />
+      <max value="0" />
+    </element>
+    <element id="Observation.performer">
+      <path value="Observation.performer" />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Organization|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Practitioner|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.performer.reference">
+      <path value="Observation.performer.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.performer.type">
+      <path value="Observation.performer.type" />
+      <max value="0" />
+    </element>
+    <element id="Observation.performer.identifier">
+      <path value="Observation.performer.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Observation.performer.display">
+      <path value="Observation.performer.display" />
+      <max value="0" />
+    </element>
+    <element id="Observation.value[x]">
+      <path value="Observation.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <type>
+        <code value="boolean" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.value[x]:valueBoolean">
+      <path value="Observation.valueBoolean" />
+      <sliceName value="valueBoolean" />
+      <min value="1" />
+      <type>
+        <code value="boolean" />
+      </type>
+      <fixedBoolean value="true" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Observation.dataAbsentReason">
+      <path value="Observation.dataAbsentReason" />
+      <max value="0" />
+    </element>
+    <element id="Observation.interpretation">
+      <path value="Observation.interpretation" />
+      <max value="0" />
+    </element>
+    <element id="Observation.note">
+      <path value="Observation.note" />
+      <max value="0" />
+    </element>
+    <element id="Observation.bodySite">
+      <path value="Observation.bodySite" />
+      <max value="0" />
+    </element>
+    <element id="Observation.method">
+      <path value="Observation.method" />
+      <max value="0" />
+    </element>
+    <element id="Observation.specimen">
+      <path value="Observation.specimen" />
+      <max value="0" />
+    </element>
+    <element id="Observation.device">
+      <path value="Observation.device" />
+      <max value="0" />
+    </element>
+    <element id="Observation.referenceRange">
+      <path value="Observation.referenceRange" />
+      <max value="0" />
+    </element>
+    <element id="Observation.hasMember">
+      <path value="Observation.hasMember" />
+      <max value="0" />
+    </element>
+    <element id="Observation.derivedFrom">
+      <path value="Observation.derivedFrom" />
+      <max value="0" />
+    </element>
+    <element id="Observation.component">
+      <path value="Observation.component" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

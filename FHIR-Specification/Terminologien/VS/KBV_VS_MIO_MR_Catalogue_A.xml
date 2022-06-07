@@ -1,0 +1,128 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<url value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_MR_Catalogue_A"/>
+	<version value="1.1.0"/>
+	<name value="KBV_VS_MIO_MR_Catalogue_A"/>
+	<title value="Anamneseerhebung bei Erstuntersuchung"/>
+	<status value="active" />
+	<experimental value="false"/>
+	<publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>
+	<contact>
+		<telecom>
+			<system value="url"/>
+			<value value="https://mio.kbv.de"/>
+		</telecom>
+	</contact>
+	<description value="Dieses Valueset enthält die Codes zur Beschreibung der Anamneseerhebung bei Erstuntersuchung."/>
+	<immutable value="false"/>
+	<copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."/>
+	<compose>
+		<include>
+			<system value="http://snomed.info/sct"/>
+			<version value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+			<concept>
+				<code value="416471007"/>
+				<display value="Family history of clinical finding (situation)"/>
+			</concept>
+			<concept>
+				<code value="312850006"/>
+				<display value="History of disorder (situation)"/>
+			</concept>
+			<concept>
+				<code value="161460007"/>
+				<display value="History of coagulation defect (situation)"/>
+			</concept>
+			<concept>
+				<code value="609328004"/>
+				<display value="Allergic disposition (finding)"/>
+			</concept>
+			<concept>
+				<code value="161664006"/>
+				<display value="History of blood transfusion (situation)"/>
+			</concept>
+			<concept>
+				<code value="271596009"/>
+				<display value="Mental distress (finding)"/>
+			</concept>
+			<concept>
+				<code value="161152002"/>
+				<display value="Social problem (finding)"/>
+			</concept>
+			<concept>
+				<code value="1156098006"/>
+				<display value="History of Rhesus isoimmunization affecting pregnancy (situation)"/>
+			</concept>
+			<concept>
+				<code value="73211009"/>
+				<display value="Diabetes mellitus (disorder)"/>
+			</concept>
+			<concept>
+				<code value="414916001"/>
+				<display value="Obesity (disorder)"/>
+			</concept>
+			<concept>
+				<code value="237837007"/>
+				<display value="Primordial dwarfism (disorder)"/>
+			</concept>
+			<concept>
+				<code value="8447006"/>
+				<display value="Congenital anomaly of skeletal bone (disorder)"/>
+			</concept>
+			<concept>
+				<code value="237240001"/>
+				<display value="Teenage pregnancy (finding)"/>
+			</concept>
+			<concept>
+				<code value="416413003"/>
+				<display value="Advanced maternal age gravida (finding)"/>
+			</concept>
+			<concept>
+				<code value="18656007"/>
+				<display value="Grand multipara (finding)"/>
+			</concept>
+			<concept>
+				<code value="134521000119104"/>
+				<display value="Fertility preservation procedure done (situation)"/>
+			</concept>
+			<concept>
+				<code value="161765003"/>
+				<display value="History of premature delivery (situation)"/>
+			</concept>
+			<concept>
+				<code value="726565008"/>
+				<display value="Past history of small for gestational age baby (situation)"/>
+			</concept>
+			<concept>
+				<code value="713651007"/>
+				<display value="History of pregnancy with abortive outcome (situation)"/>
+			</concept>
+			<concept>
+				<code value="161743003"/>
+				<display value="History of stillbirth (situation)"/>
+			</concept>
+			<concept>
+				<code value="1156096005"/>
+				<display value="History of complication occurring during labor and delivery (situation)"/>
+			</concept>
+			<concept>
+				<code value="1156097001"/>
+				<display value="History of complication of puerperium (situation)"/>
+			</concept>
+			<concept>
+				<code value="161805006"/>
+				<display value="History of cesarean section (situation)"/>
+			</concept>
+			<concept>
+				<code value="1156095009"/>
+				<display value="History of operation on uterus (situation)"/>
+			</concept>
+			<concept>
+				<code value="60001007:263502005=424572001"/>
+				<display value="Not pregnant (finding) : Clinical course (attribute) =  Clinical course with short duration (qualifier value)"/>
+			</concept>
+			<concept>
+				<code value="418138009"/>
+				<display value="Patient condition finding (finding)"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

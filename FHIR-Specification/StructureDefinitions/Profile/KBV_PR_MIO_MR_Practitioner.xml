@@ -1,0 +1,617 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Practitioner"/>
+	<version value="1.1.0"/>
+	<name value="KBV_PR_MIO_MR_Practitioner"/>
+	<status value="active" />
+	<publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>
+	<copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."/>
+	<fhirVersion value="4.0.1"/>
+	<mapping>
+		<identity value="v2"/>
+		<uri value="http://hl7.org/v2"/>
+		<name value="HL7 v2 Mapping"/>
+	</mapping>
+	<mapping>
+		<identity value="rim"/>
+		<uri value="http://hl7.org/v3"/>
+		<name value="RIM Mapping"/>
+	</mapping>
+	<mapping>
+		<identity value="servd"/>
+		<uri value="http://www.omg.org/spec/ServD/1.0/"/>
+		<name value="ServD"/>
+	</mapping>
+	<mapping>
+		<identity value="w5"/>
+		<uri value="http://hl7.org/fhir/fivews"/>
+		<name value="FiveWs Pattern Mapping"/>
+	</mapping>
+	<kind value="resource"/>
+	<abstract value="false"/>
+	<type value="Practitioner"/>
+	<baseDefinition value="https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Practitioner|1.1.3"/>
+	<derivation value="constraint"/>
+	<differential>
+		<element id="Practitioner">
+			<path value="Practitioner"/>
+			<definition value="In diesem Profil können Angaben zur behandelnden Person dokumentiert werden."/>
+		</element>
+		<element id="Practitioner.meta">
+			<path value="Practitioner.meta"/>
+			<min value="1"/>
+		</element>
+		<element id="Practitioner.meta.versionId">
+			<path value="Practitioner.meta.versionId"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.meta.lastUpdated">
+			<path value="Practitioner.meta.lastUpdated"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.meta.source">
+			<path value="Practitioner.meta.source"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.meta.profile">
+			<path value="Practitioner.meta.profile"/>
+			<min value="1"/>
+			<max value="1"/>
+			<fixedCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Practitioner|1.1.0"/>
+		</element>
+		<element id="Practitioner.meta.security">
+			<path value="Practitioner.meta.security"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.meta.tag">
+			<path value="Practitioner.meta.tag"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.implicitRules">
+			<path value="Practitioner.implicitRules"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.language">
+			<path value="Practitioner.language"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.text">
+			<path value="Practitioner.text"/>
+			<definition value="In diesem Element können die, in der Instanz, enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind."/>
+		</element>
+		<element id="Practitioner.contained">
+			<path value="Practitioner.contained"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.extension">
+			<path value="Practitioner.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
+		</element>
+		<element id="Practitioner.extension:ergaenzende_Angaben">
+			<path value="Practitioner.extension"/>
+			<sliceName value="ergaenzende_Angaben"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.extension:ergaenzende_Angaben.value[x]">
+			<path value="Practitioner.extension.value[x]"/>
+			<slicing>
+				<discriminator>
+					<type value="type"/>
+					<path value="$this"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.extension:ergaenzende_Angaben.value[x]:valueString">
+			<path value="Practitioner.extension.value[x]"/>
+			<sliceName value="valueString"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.identifier">
+			<path value="Practitioner.identifier"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="type.coding.code"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.identifier:ANR">
+			<path value="Practitioner.identifier"/>
+			<sliceName value="ANR"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.identifier:ANR.type.coding.display">
+            <path value="Practitioner.identifier.type.coding.display" />
+            <min value="1" />
+			<max value="1" />
+			<fixedString value="Lifelong physician number" />
+        </element>
+		<element id="Practitioner.identifier:ANR.type.text">
+			<path value="Practitioner.identifier.type.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.identifier:ANR.period">
+			<path value="Practitioner.identifier.period"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.identifier:ANR.assigner">
+			<path value="Practitioner.identifier.assigner"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.identifier:EFN">
+			<path value="Practitioner.identifier"/>
+			<sliceName value="EFN"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.identifier:EFN.type.coding.display">
+            <path value="Practitioner.identifier.type.coding.display" />
+            <min value="1" />
+			<max value="1" />
+			<fixedString value="Medical License number" />
+        </element>
+		<element id="Practitioner.identifier:EFN.type.text">
+			<path value="Practitioner.identifier.type.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.identifier:EFN.period">
+			<path value="Practitioner.identifier.period"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.identifier:EFN.assigner">
+			<path value="Practitioner.identifier.assigner"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.identifier:ZANR">
+			<path value="Practitioner.identifier"/>
+			<sliceName value="ZANR"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.identifier:HebammenIK">
+			<path value="Practitioner.identifier"/>
+			<sliceName value="HebammenIK"/>
+			<max value="1"/>
+			<type>
+                <code value="Identifier" />
+                <profile value="http://fhir.de/StructureDefinition/identifier-iknr|0.9.13" />
+            </type>
+			<mustSupport value="true"/>
+		</element>
+		 <element id="Practitioner.identifier:HebammenIK.type">
+            <path value="Practitioner.identifier.type" />
+			<min value="1" />
+            <mustSupport value="true" />
+        </element>
+        <element id="Practitioner.identifier:HebammenIK.type.coding">
+            <path value="Practitioner.identifier.type.coding" />
+			<min value="1" />
+			<max value="1" />
+            <mustSupport value="true" />
+        </element>
+        <element id="Practitioner.identifier:HebammenIK.type.coding.system">
+            <path value="Practitioner.identifier.type.coding.system" />
+			<min value="1" />
+			<fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+            <mustSupport value="true" />
+        </element>
+		<element id="Practitioner.identifier:HebammenIK.type.coding.code">
+            <path value="Practitioner.identifier.type.coding.code" />
+            <min value="1" />
+            <fixedCode value="XX" />
+        </element>
+		<element id="Practitioner.identifier:HebammenIK.type.coding.display">
+            <path value="Practitioner.identifier.type.coding.display" />
+            <min value="1" />
+			<max value="1" />
+			<fixedString value="Organisations-ID" />
+        </element>
+		<element id="Practitioner.identifier:HebammenIK.period">
+			<path value="Practitioner.identifier.period"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.identifier:HebammenIK.assigner">
+			<path value="Practitioner.identifier.assigner"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.active">
+			<path value="Practitioner.active"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.name">
+			<path value="Practitioner.name"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name">
+			<path value="Practitioner.name"/>
+			<sliceName value="name"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.text">
+			<path value="Practitioner.name.text"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.family">
+			<path value="Practitioner.name.family"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.family.extension">
+			<path value="Practitioner.name.family.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
+		</element>
+		<element id="Practitioner.name:name.family.extension:namenszusatz">
+			<path value="Practitioner.name.family.extension"/>
+			<sliceName value="namenszusatz"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.family.extension:namenszusatz.value[x]">
+			<path value="Practitioner.name.family.extension.value[x]"/>
+			 <slicing>
+                <discriminator>
+                    <type value="type" />
+                    <path value="$this" />
+                </discriminator>
+                <rules value="closed" />
+            </slicing>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.family.extension:namenszusatz.value[x]:valueString">
+            <path value="Practitioner.name.family.extension.value[x]" />
+            <sliceName value="valueString" />
+            <mustSupport value="true" />
+        </element>
+		<element id="Practitioner.name:name.family.extension:nachname">
+			<path value="Practitioner.name.family.extension"/>
+			<sliceName value="nachname"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.family.extension:nachname.value[x]">
+			<path value="Practitioner.name.family.extension.value[x]"/>
+			<slicing>
+                <discriminator>
+                    <type value="type" />
+                    <path value="$this" />
+                </discriminator>
+                <rules value="closed" />
+            </slicing>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.family.extension:nachname.value[x]:valueString">
+			<path value="Practitioner.name.family.extension.value[x]"/>
+			<sliceName value="valueString"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.family.extension:vorsatzwort">
+			<path value="Practitioner.name.family.extension"/>
+			<sliceName value="vorsatzwort"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.family.extension:vorsatzwort.value[x]">
+			<path value="Practitioner.name.family.extension.value[x]"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.family.extension:vorsatzwort.value[x]:valueString">
+			<path value="Practitioner.name.family.extension.value[x]"/>
+			<sliceName value="valueString"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.given">
+			<path value="Practitioner.name.given"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.prefix">
+			<path value="Practitioner.name.prefix"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.prefix.extension">
+			<path value="Practitioner.name.prefix.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
+		</element>
+		<element id="Practitioner.name:name.prefix.extension:prefix-qualifier">
+			<path value="Practitioner.name.prefix.extension"/>
+			<sliceName value="prefix-qualifier"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.prefix.extension:prefix-qualifier.value[x]">
+			<path value="Practitioner.name.prefix.extension.value[x]"/>
+			<slicing>
+                <discriminator>
+                    <type value="type" />
+                    <path value="$this" />
+                </discriminator>
+                <rules value="openAtEnd" />
+            </slicing>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.prefix.extension:prefix-qualifier.value[x]:valueCode">
+			<path value="Practitioner.name.prefix.extension.value[x]"/>
+			<sliceName value="valueCode"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.name:name.suffix">
+			<path value="Practitioner.name.suffix"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.name:name.period">
+			<path value="Practitioner.name.period"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.name:geburtsname">
+			<path value="Practitioner.name"/>
+			<sliceName value="geburtsname"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.telecom">
+			<path value="Practitioner.telecom"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.telecom.rank">
+			<path value="Practitioner.telecom.rank"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.telecom.period">
+			<path value="Practitioner.telecom.period"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.address">
+			<path value="Practitioner.address"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift">
+			<path value="Practitioner.address"/>
+			<sliceName value="Strassenanschrift"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.extension">
+			<path value="Practitioner.address.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.extension:Stadtteil">
+			<path value="Practitioner.address.extension"/>
+			<sliceName value="Stadtteil"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.extension:Stadtteil.value[x]">
+			<path value="Practitioner.address.extension.value[x]"/>
+			 <slicing>
+                <discriminator>
+                    <type value="type" />
+                    <path value="$this" />
+                </discriminator>
+                <rules value="closed" />
+            </slicing>
+			<mustSupport value="true"/>
+		</element>
+		 <element id="Practitioner.address:Strassenanschrift.extension:Stadtteil.value[x]:valueString">
+            <path value="Practitioner.address.extension.value[x]" />
+            <sliceName value="valueString" />
+            <mustSupport value="true" />
+        </element>
+		<element id="Practitioner.address:Strassenanschrift.line">
+			<path value="Practitioner.address.line"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.line.extension">
+			<path value="Practitioner.address.line.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.line.extension:Strasse">
+			<path value="Practitioner.address.line.extension"/>
+			<sliceName value="Strasse"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.line.extension:Strasse.value[x]">
+			<path value="Practitioner.address.line.extension.value[x]"/>
+			<slicing>
+                <discriminator>
+                    <type value="type" />
+                    <path value="$this" />
+                </discriminator>
+                <rules value="closed" />
+            </slicing>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.line.extension:Strasse.value[x]:valueString">
+			<path value="Practitioner.address.line.extension.value[x]"/>
+			<sliceName value="valueString"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.line.extension:Hausnummer">
+			<path value="Practitioner.address.line.extension"/>
+			<sliceName value="Hausnummer"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.line.extension:Hausnummer.value[x]">
+			<path value="Practitioner.address.line.extension.value[x]"/>
+			<slicing>
+                <discriminator>
+                    <type value="type" />
+                    <path value="$this" />
+                </discriminator>
+                <rules value="closed" />
+            </slicing>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.line.extension:Hausnummer.value[x]:valueString">
+			<path value="Practitioner.address.line.extension.value[x]"/>
+			<sliceName value="valueString"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.line.extension:Adresszusatz">
+			<path value="Practitioner.address.line.extension"/>
+			<sliceName value="Adresszusatz"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.line.extension:Adresszusatz.value[x]">
+			<path value="Practitioner.address.line.extension.value[x]"/>
+			<slicing>
+                <discriminator>
+                    <type value="type" />
+                    <path value="$this" />
+                </discriminator>
+                <rules value="closed" />
+            </slicing>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.line.extension:Adresszusatz.value[x]:valueString">
+			<path value="Practitioner.address.line.extension.value[x]"/>
+			<sliceName value="valueString"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.city">
+			<path value="Practitioner.address.city"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.state">
+			<path value="Practitioner.address.state"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.postalCode">
+			<path value="Practitioner.address.postalCode"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.country">
+			<path value="Practitioner.address.country"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.address:Strassenanschrift.period">
+			<path value="Practitioner.address.period"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.address:Postfach">
+			<path value="Practitioner.address"/>
+			<sliceName value="Postfach"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.gender">
+			<path value="Practitioner.gender"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.birthDate">
+			<path value="Practitioner.birthDate"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.photo">
+			<path value="Practitioner.photo"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.qualification">
+			<path value="Practitioner.qualification"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.qualification.code">
+			<path value="Practitioner.qualification.code"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.qualification.code.coding">
+			<path value="Practitioner.qualification.code.coding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+			<binding>
+				<strength value="required"/>
+				<valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_MR_Practitioner_Function|1.1.0"/>
+			</binding>
+		</element>
+		<element id="Practitioner.qualification.code.coding.display.extension">
+			<path value="Practitioner.qualification.code.coding.display.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
+		</element>
+		<element id="Practitioner.qualification.code.coding.display.extension:anzeigenameQualifikation">
+			<path value="Practitioner.qualification.code.coding.display.extension"/>
+			<sliceName value="anzeigenameQualifikation"/>
+			<max value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.qualification.code.coding.display.extension:anzeigenameQualifikation.extension">
+			<path value="Practitioner.qualification.code.coding.display.extension.extension"/>
+			<slicing>
+				<discriminator>
+					<type value="value"/>
+					<path value="url"/>
+				</discriminator>
+				<rules value="closed"/>
+			</slicing>
+		</element>
+		<element id="Practitioner.qualification.code.coding.display.extension:anzeigenameQualifikation.extension:content">
+			<path value="Practitioner.qualification.code.coding.display.extension.extension"/>
+			<sliceName value="content"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.qualification.code.coding.display.extension:anzeigenameQualifikation.extension:content.value[x]">
+			<path value="Practitioner.qualification.code.coding.display.extension.extension.value[x]"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.qualification.code.coding.display.extension:anzeigenameQualifikation.extension:content.value[x]:valueString">
+			<path value="Practitioner.qualification.code.coding.display.extension.extension.value[x]"/>
+			<sliceName value="valueString"/>
+			<min value="1"/>
+			<mustSupport value="true"/>
+		</element>
+		<element id="Practitioner.qualification.code.coding.userSelected">
+			<path value="Practitioner.qualification.code.coding.userSelected"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.qualification.code.text">
+			<path value="Practitioner.qualification.code.text"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.qualification.period">
+			<path value="Practitioner.qualification.period"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.qualification.issuer">
+			<path value="Practitioner.qualification.issuer"/>
+			<max value="0"/>
+		</element>
+		<element id="Practitioner.communication">
+			<path value="Practitioner.communication"/>
+			<max value="0"/>
+		</element>
+	</differential>
+</StructureDefinition>

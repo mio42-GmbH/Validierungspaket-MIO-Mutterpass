@@ -1,0 +1,223 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Appointment_Pregnancy" />
+  <version value="1.1.0" />
+  <name value="KBV_PR_MIO_MR_Appointment_Pregnancy" />
+  <status value="active" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="ical" />
+    <uri value="http://ietf.org/rfc/2445" />
+    <name value="iCalendar" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Appointment" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Appointment" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Appointment">
+      <path value="Appointment" />
+      <definition value="In diesem Profil können die nächsten Untersuchungstermine während der Schwangerschaft dokumentiert werden." />
+    </element>
+    <element id="Appointment.meta">
+      <path value="Appointment.meta" />
+      <min value="1" />
+    </element>
+    <element id="Appointment.meta.versionId">
+      <path value="Appointment.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.meta.lastUpdated">
+      <path value="Appointment.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.meta.source">
+      <path value="Appointment.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.meta.profile">
+      <path value="Appointment.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Appointment_Pregnancy|1.1.0" />
+    </element>
+    <element id="Appointment.meta.security">
+      <path value="Appointment.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.meta.tag">
+      <path value="Appointment.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.implicitRules">
+      <path value="Appointment.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.language">
+      <path value="Appointment.language" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.text">
+      <path value="Appointment.text" />
+      <definition value="In diesem Element können die, in der Instanz, enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind." />
+    </element>
+    <element id="Appointment.contained">
+      <path value="Appointment.contained" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.identifier">
+      <path value="Appointment.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.status">
+      <path value="Appointment.status" />
+      <fixedCode value="booked" />
+    </element>
+    <element id="Appointment.cancelationReason">
+      <path value="Appointment.cancelationReason" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.serviceCategory">
+      <path value="Appointment.serviceCategory" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.serviceType">
+      <path value="Appointment.serviceType" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.specialty">
+      <path value="Appointment.specialty" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.appointmentType">
+      <path value="Appointment.appointmentType" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.reasonCode">
+      <path value="Appointment.reasonCode" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.reasonReference">
+      <path value="Appointment.reasonReference" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.priority">
+      <path value="Appointment.priority" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.description">
+      <path value="Appointment.description" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.supportingInformation">
+      <path value="Appointment.supportingInformation" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.start">
+      <path value="Appointment.start" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Appointment.end">
+      <path value="Appointment.end" />
+    </element>
+    <element id="Appointment.minutesDuration">
+      <path value="Appointment.minutesDuration" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.slot">
+      <path value="Appointment.slot" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.created">
+      <path value="Appointment.created" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.comment">
+      <path value="Appointment.comment" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.patientInstruction">
+      <path value="Appointment.patientInstruction" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.basedOn">
+      <path value="Appointment.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.participant">
+      <path value="Appointment.participant" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Appointment.participant.type">
+      <path value="Appointment.participant.type" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.participant.actor">
+      <path value="Appointment.participant.actor" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Patient_Mother|1.1.0" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Practitioner|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Appointment.participant.actor.reference">
+      <path value="Appointment.participant.actor.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Appointment.participant.actor.type">
+      <path value="Appointment.participant.actor.type" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.participant.actor.identifier">
+      <path value="Appointment.participant.actor.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.participant.actor.display">
+      <path value="Appointment.participant.actor.display" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.participant.required">
+      <path value="Appointment.participant.required" />
+      <min value="1" />
+      <fixedCode value="required" />
+    </element>
+    <element id="Appointment.participant.status">
+      <path value="Appointment.participant.status" />
+      <fixedCode value="accepted" />
+    </element>
+    <element id="Appointment.participant.period">
+      <path value="Appointment.participant.period" />
+      <max value="0" />
+    </element>
+    <element id="Appointment.requestedPeriod">
+      <path value="Appointment.requestedPeriod" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,25 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_MR_Practitioner_Function" />
+  <version value="1.1.0" />
+  <name value="KBV_VS_MIO_MR_Practitioner_Function" />
+  <title value="Funktionen/Rollen des Behandelnden" />
+  <status value="active" />
+  <experimental value="false" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <contact>
+		<telecom>
+			<system value="url"/>
+			<value value="https://mio.kbv.de"/>
+		</telecom>
+	</contact>
+  <description value="Dieses Valueset enthält die Codes zur Beschreibung der Funktionen/Rollen des Behandelnden." />
+  <immutable value="false" />
+  <compose>
+    <include>
+      <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_MR_IHEXDS_AuthorSpeciality_Restricted" />
+    </include>
+    <include>
+      <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_MR_Practitioner_Function_Addendum" />
+    </include>
+  </compose>
+</ValueSet>

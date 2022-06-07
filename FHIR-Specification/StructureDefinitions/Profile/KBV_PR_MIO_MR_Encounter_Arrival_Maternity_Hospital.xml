@@ -1,0 +1,356 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Encounter_Arrival_Maternity_Hospital" />
+  <version value="1.1.0" />
+  <name value="KBV_PR_MIO_MR_Encounter_Arrival_Maternity_Hospital" />
+  <status value="active" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Encounter" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Encounter" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Encounter">
+      <path value="Encounter" />
+      <definition value="In diesem Profil kann die Vorstellung in der Entbindungsklinik während der Schwangerschaft dokumentiert werden." />
+    </element>
+    <element id="Encounter.meta">
+      <path value="Encounter.meta" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.meta.versionId">
+      <path value="Encounter.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.meta.lastUpdated">
+      <path value="Encounter.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.meta.source">
+      <path value="Encounter.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.meta.profile">
+      <path value="Encounter.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Encounter_Arrival_Maternity_Hospital|1.1.0" />
+    </element>
+    <element id="Encounter.meta.security">
+      <path value="Encounter.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.meta.tag">
+      <path value="Encounter.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.implicitRules">
+      <path value="Encounter.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.language">
+      <path value="Encounter.language" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.text">
+      <path value="Encounter.text" />
+      <definition value="In diesem Element können die, in der Instanz, enthaltenen Informationen in einer menschenlesbaren Form zusammengefasst werden. Dabei ist zu beachten, dass keine Informationen aufgenommen werden dürfen, die nicht in strukturierter Form an anderer Stelle in der Instanz enthalten sind." />
+    </element>
+    <element id="Encounter.contained">
+      <path value="Encounter.contained" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.identifier">
+      <path value="Encounter.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.status">
+      <path value="Encounter.status" />
+      <fixedCode value="arrived" />
+    </element>
+    <element id="Encounter.statusHistory">
+      <path value="Encounter.statusHistory" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.class">
+      <path value="Encounter.class" />
+    </element>
+    <element id="Encounter.class.system">
+      <path value="Encounter.class.system" />
+      <min value="1" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+    </element>
+    <element id="Encounter.class.version">
+      <path value="Encounter.class.version" />
+      <min value="1" />
+      <fixedString value="2.0.0" />
+    </element>
+    <element id="Encounter.class.code">
+      <path value="Encounter.class.code" />
+      <min value="1" />
+      <fixedCode value="AMB" />
+    </element>
+    <element id="Encounter.class.userSelected">
+      <path value="Encounter.class.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.classHistory">
+      <path value="Encounter.classHistory" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.type">
+      <path value="Encounter.type" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.type.coding">
+      <path value="Encounter.type.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.type.coding.system">
+      <path value="Encounter.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Encounter.type.coding.version">
+      <path value="Encounter.type.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20210731" />
+    </element>
+    <element id="Encounter.type.coding.code">
+      <path value="Encounter.type.coding.code" />
+      <min value="1" />
+      <fixedCode value="406543005:704321009=18114009" />
+    </element>
+    <element id="Encounter.type.coding.display">
+      <path value="Encounter.type.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.type.coding.display.extension">
+      <path value="Encounter.type.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Encounter.type.coding.display.extension:anzeigenameCodeSnomed">
+      <path value="Encounter.type.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.type.coding.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="Encounter.type.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+    </element>
+    <element id="Encounter.type.coding.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="Encounter.type.coding.display.extension.extension" />
+      <sliceName value="content" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.type.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]">
+      <path value="Encounter.type.coding.display.extension.extension.value[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.type.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="Encounter.type.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <min value="1" />
+      <fixedString value="In der Entbindungsklinik vorgestellt am" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.type.coding.userSelected">
+      <path value="Encounter.type.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.type.text">
+      <path value="Encounter.type.text" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.serviceType">
+      <path value="Encounter.serviceType" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.priority">
+      <path value="Encounter.priority" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.subject">
+      <path value="Encounter.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Patient_Mother|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.subject.reference">
+      <path value="Encounter.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.subject.type">
+      <path value="Encounter.subject.type" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.subject.identifier">
+      <path value="Encounter.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.subject.display">
+      <path value="Encounter.subject.display" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.episodeOfCare">
+      <path value="Encounter.episodeOfCare" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.basedOn">
+      <path value="Encounter.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.participant">
+      <path value="Encounter.participant" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.appointment">
+      <path value="Encounter.appointment" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.period">
+      <path value="Encounter.period" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.period.start">
+      <path value="Encounter.period.start" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.period.end">
+      <path value="Encounter.period.end" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.length">
+      <path value="Encounter.length" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.reasonCode">
+      <path value="Encounter.reasonCode" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.reasonReference">
+      <path value="Encounter.reasonReference" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.diagnosis">
+      <path value="Encounter.diagnosis" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.diagnosis.condition.reference">
+      <path value="Encounter.diagnosis.condition.reference" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.diagnosis.condition.type">
+      <path value="Encounter.diagnosis.condition.type" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.diagnosis.condition.identifier">
+      <path value="Encounter.diagnosis.condition.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.diagnosis.condition.display">
+      <path value="Encounter.diagnosis.condition.display" />
+      <min value="1" />
+    </element>
+    <element id="Encounter.diagnosis.use">
+      <path value="Encounter.diagnosis.use" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.diagnosis.rank">
+      <path value="Encounter.diagnosis.rank" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.account">
+      <path value="Encounter.account" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.hospitalization">
+      <path value="Encounter.hospitalization" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.location">
+      <path value="Encounter.location" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.serviceProvider">
+      <path value="Encounter.serviceProvider" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Organization|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.serviceProvider.reference">
+      <path value="Encounter.serviceProvider.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Encounter.serviceProvider.type">
+      <path value="Encounter.serviceProvider.type" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.serviceProvider.identifier">
+      <path value="Encounter.serviceProvider.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.serviceProvider.display">
+      <path value="Encounter.serviceProvider.display" />
+      <max value="0" />
+    </element>
+    <element id="Encounter.partOf">
+      <path value="Encounter.partOf" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

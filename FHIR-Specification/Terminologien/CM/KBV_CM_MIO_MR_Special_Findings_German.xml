@@ -1,0 +1,257 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<url value="https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_MR_Special_Findings_German"/>
+	<version value="1.1.0"/>
+	<name value="KBV_CM_MIO_MR_Special_Findings_German"/>
+	<title value="Befundkatalog Besondere Befunde"/>
+	<status value="active" />
+	<experimental value="false"/>
+	<publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>
+	<contact>
+		<telecom>
+			<system value="url"/>
+			<value value="https://mio.kbv.de"/>
+		</telecom>
+	</contact>
+	<description value="Diese Conceptmap verknüpft die Codes für den Befundkatalog Besondere Befunde mit deutschen Bezeichnungen."/>
+	<copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."/>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_MR_Special_Findings_German"/>
+		<targetVersion value="1.1.0"/>
+		<element>
+			<code value="27624003"/>
+			<display value="Chronic disease (disorder)"/>
+			<target>
+				<code value="BehandlungsbeduerftigeAllgemeinerkrankungen"/>
+				<display value="(27) Behandlungsbedürftige Allgemeinerkrankungen"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="710814002"/>
+			<display value="Long-term current use of drug therapy (situation)"/>
+			<target>
+				<code value="Dauermedikation"/>
+				<display value="(28) Dauermedikation"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="66214007"/>
+			<display value="Substance abuse (disorder)"/>
+			<target>
+				<code value="Abusus"/>
+				<display value="(29) Abusus"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="271596009"/>
+			<display value="Mental distress (finding)"/>
+			<target>
+				<code value="BesonderepsychischeBelastung"/>
+				<display value="(30) Besondere psychische Belastung"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="161152002"/>
+			<display value="Social problem (finding)"/>
+			<target>
+				<code value="BesonderesozialeBelastung"/>
+				<display value="(31) Besondere soziale Belastung"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="723665008"/>
+			<display value="Vaginal bleeding complicating early pregnancy (disorder)"/>
+			<target>
+				<code value="BlutungenvorderSSW"/>
+				<display value="(32) Blutungen vor der 28. SSW"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="427139004"/>
+			<display value="Third trimester bleeding (disorder)"/>
+			<target>
+				<code value="BlutungennachderSSW"/>
+				<display value="(33) Blutungen nach der 28. SSW"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="36813001"/>
+			<display value="Placenta previa (disorder)"/>
+			<target>
+				<code value="Placentapraevia"/>
+				<display value="(34) Placenta praevia"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="16356006"/>
+			<display value="Multiple pregnancy (disorder)"/>
+			<target>
+				<code value="Mehrlingsschwangerschaft"/>
+				<display value="(35) Mehrlingsschwangerschaft"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="86203003"/>
+			<display value="Polyhydramnios (disorder)"/>
+			<target>
+				<code value="Hydramnion"/>
+				<display value="(36) Hydramnion"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="59566000"/>
+			<display value="Oligohydramnios (disorder)"/>
+			<target>
+				<code value="Oligohydramnie"/>
+				<display value="(37) Oligohydramnie"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="237238006"/>
+			<display value="Pregnancy with uncertain dates (finding)"/>
+			<target>
+				<code value="Terminunklarheit"/>
+				<display value="(38) Terminunklarheit"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="237292005"/>
+			<display value="Placental insufficiency (disorder)"/>
+			<target>
+				<code value="PlacentaInsuffizienz"/>
+				<display value="(39) Placenta-Insuffizienz"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="17382005"/>
+			<display value="Cervical incompetence (disorder)"/>
+			<target>
+				<code value="IsthmozervikaleInsuffizienz"/>
+				<display value="(40) Isthmozervikale Insuffizienz"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="6383007"/>
+			<display value="Premature labor (finding)"/>
+			<target>
+				<code value="VorzeitigeWehentaetigkeit"/>
+				<display value="(41) Vorzeitige Wehentätigkeit"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="199246003"/>
+			<display value="Anemia during pregnancy - baby not yet delivered (disorder)"/>
+			<target>
+				<code value="Anaemie"/>
+				<display value="(42) Anämie"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="307534009"/>
+			<display value="Urinary tract infection in pregnancy (disorder)"/>
+			<target>
+				<code value="Harnwegsinfekt"/>
+				<display value="(43) Harnwegsinfekt"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="165775009"/>
+			<display value="Indirect Coombs test positive (finding)"/>
+			<target>
+				<code value="IndirekterCoombstestpositiv"/>
+				<display value="(44) Indirekter Coombstest positiv"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="47200007:418775008=312404004"/>
+			<display value="High risk pregnancy (finding) : Finding method (attribute) = Antenatal blood tests (procedure)"/>
+			<target>
+				<code value="RisikoausanderenserologischenBefunden"/>
+				<display value="(45) Risiko aus anderen serologischen Befunden"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="82771000119102"/>
+			<display value="Hypertension complicating pregnancy (disorder)"/>
+			<target>
+				<code value="HypertonieBlutdruckueber"/>
+				<display value="(46) Hypertonie (Blutdruck über 140/90)"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="29738008"/>
+			<display value="Proteinuria (finding)"/>
+			<target>
+				<code value="PathologischeEiweissausscheidung"/>
+				<display value="(47) Pathologische Eiweißausscheidung"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="698632006:263502005=371924009"/>
+			<display value="Pregnancy induced edema (disorder) : Clinical course (attribute) = Moderate to severe (qualifier value)"/>
+			<target>
+				<code value="MittelgradigeschwereOedeme"/>
+				<display value="(48) Mittelgradige - schwere Ödeme"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="45007003"/>
+			<display value="Low blood pressure (disorder)"/>
+			<target>
+				<code value="Hypotonie"/>
+				<display value="(49) Hypotonie"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="11687002"/>
+			<display value="Gestational diabetes mellitus (disorder)"/>
+			<target>
+				<code value="Gestationsdiabetes"/>
+				<display value="(50) Gestationsdiabetes"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="289365005"/>
+			<display value="Finding of malposition of fetus (finding)"/>
+			<target>
+				<code value="Einstellungsanomalie"/>
+				<display value="(51) Einstellungsanomalie"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="118185001"/>
+			<display value="Finding related to pregnancy (finding)"/>
+			<target>
+				<code value="AndereBesonderheiten"/>
+				<display value="(52) Andere Besonderheiten"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+</ConceptMap>

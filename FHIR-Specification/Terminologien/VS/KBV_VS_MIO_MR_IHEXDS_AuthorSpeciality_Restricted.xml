@@ -1,0 +1,266 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+	<url value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_MR_IHEXDS_AuthorSpeciality_Restricted"/>
+	<version value="1.1.0"/>
+	<name value="KBV_VS_MIO_MR_IHEXDS_AuthorSpeciality_Restricted"/>
+	<title value="Rolle des Behandelnden"/>
+	<status value="active" />
+	<experimental value="false"/>
+	<publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>
+	<contact>
+		<telecom>
+			<system value="url"/>
+			<value value="https://mio.kbv.de"/>
+		</telecom>
+	</contact>
+	<description value="Dieses Valueset enthält die Codes zur Beschreibung der Funktionen/Rollen des Behandelnden. Das Valueset ist eine eingekürzte Version des Valuesets http://ihe-d.de/ValueSets/IHEXDSauthorSpeciality"/>
+	<immutable value="false"/>
+	<copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."/>
+	<compose>
+		<include>
+			<system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO" />
+	  <version value="1.15" />
+			<concept>
+				<code value="010"/>
+				<display value="FA Allgemeinmedizin"/>
+			</concept>
+			<concept>
+				<code value="020"/>
+				<display value="FA Anästhesiologie"/>
+			</concept>
+			<concept>
+				<code value="030"/>
+				<display value="FA Augenheilkunde"/>
+			</concept>
+			<concept>
+				<code value="050"/>
+				<display value="FA Frauenheilkunde und Geburtshilfe"/>
+			</concept>
+			<concept>
+				<code value="060"/>
+				<display value="FA Hals-, Nasen-, Ohrenheilkunde"/>
+			</concept>
+			<concept>
+				<code value="070"/>
+				<display value="FA Haut- und Geschlechtskrankheiten"/>
+			</concept>
+			<concept>
+				<code value="080"/>
+				<display value="FA Innere Medizin"/>
+			</concept>
+			<concept>
+				<code value="091"/>
+				<display value="SP Kinderkardiologie"/>
+			</concept>
+			<concept>
+				<code value="093"/>
+				<display value="SP Neonatologie"/>
+			</concept>
+			<concept>
+				<code value="110"/>
+				<display value="FA Laboratoriumsmedizin"/>
+			</concept>
+			<concept>
+				<code value="142"/>
+				<display value="FA Neurologie"/>
+			</concept>
+			<concept>
+				<code value="147"/>
+				<display value="FA Psychiatrie und Psychotherapie"/>
+			</concept>
+			<concept>
+				<code value="150"/>
+				<display value="FA Neurochirurgie"/>
+			</concept>
+			<concept>
+				<code value="170"/>
+				<display value="FA Pathologie"/>
+			</concept>
+			<concept>
+				<code value="180"/>
+				<display value="FA Pharmakologie und Toxikologie"/>
+			</concept>
+			<concept>
+				<code value="197"/>
+				<display value="SP Neuroradiologie"/>
+			</concept>
+			<concept>
+				<code value="200"/>
+				<display value="FA Urologie"/>
+			</concept>
+			<concept>
+				<code value="210"/>
+				<display value="FA Arbeitsmedizin"/>
+			</concept>
+			<concept>
+				<code value="220"/>
+				<display value="FA Nuklearmedizin"/>
+			</concept>
+			<concept>
+				<code value="230"/>
+				<display value="FA Öffentliches Gesundheitswesen"/>
+			</concept>
+			<concept>
+				<code value="271"/>
+				<display value="FA Neuropathologie"/>
+			</concept>
+			<concept>
+				<code value="281"/>
+				<display value="FA Klinische Pharmakologie"/>
+			</concept>
+			<concept>
+				<code value="291"/>
+				<display value="FA Strahlentherapie"/>
+			</concept>
+			<concept>
+				<code value="303"/>
+				<display value="FA Transfusionsmedizin"/>
+			</concept>
+			<concept>
+				<code value="313"/>
+				<display value="FA Herzchirurgie"/>
+			</concept>
+			<concept>
+				<code value="314"/>
+				<display value="FA Humangenetik"/>
+			</concept>
+			<concept>
+				<code value="330"/>
+				<display value="FA Physikalische und Rehabilitative Medizin"/>
+			</concept>
+			<concept>
+				<code value="341"/>
+				<display value="FA Kinder-und Jugendmedizin"/>
+			</concept>
+			<concept>
+				<code value="511"/>
+				<display value="FA Gefäßchirurgie"/>
+			</concept>
+			<concept>
+				<code value="512"/>
+				<display value="FA Orthopädie und Unfallchirurgie"/>
+			</concept>
+			<concept>
+				<code value="513"/>
+				<display value="FA Thoraxchirurgie"/>
+			</concept>
+			<concept>
+				<code value="514"/>
+				<display value="FA Visceralchirurgie"/>
+			</concept>
+			<concept>
+				<code value="515"/>
+				<display value="SP Gynäkologische Onkologie"/>
+			</concept>
+			<concept>
+				<code value="516"/>
+				<display value="SP Gynäkologische Endokrinologie und Reproduktionsmedizin"/>
+			</concept>
+			<concept>
+				<code value="517"/>
+				<display value="SP Spezielle Geburtshilfe und Perinatalmedizin"/>
+			</concept>
+			<concept>
+				<code value="521"/>
+				<display value="FA Innere Medizin und (SP) Angiologie"/>
+			</concept>
+			<concept>
+				<code value="522"/>
+				<display value="FA Innere Medizin und (SP) Endokrinologie und Diabetologie"/>
+			</concept>
+			<concept>
+				<code value="523"/>
+				<display value="FA Innere Medizin und (SP) Gastroenterologie"/>
+			</concept>
+			<concept>
+				<code value="524"/>
+				<display value="FA Innere Medizin und (SP) Hämatologie und Onkologie"/>
+			</concept>
+			<concept>
+				<code value="525"/>
+				<display value="FA Innere Medizin und (SP) Kardiologie"/>
+			</concept>
+			<concept>
+				<code value="526"/>
+				<display value="FA Innere Medizin und (SP) Nephrologie"/>
+			</concept>
+			<concept>
+				<code value="527"/>
+				<display value="FA Innere Medizin und (SP) Pneumologie"/>
+			</concept>
+			<concept>
+				<code value="528"/>
+				<display value="FA Innere Medizin und (SP) Rheumatologie"/>
+			</concept>
+			<concept>
+				<code value="532"/>
+				<display value="FA Mikrobiologie, Virologie und Infektionsepidemiologie"/>
+			</concept>
+			<concept>
+				<code value="534"/>
+				<display value="FA Psychosomatische Medizin und Psychotherapie"/>
+			</concept>
+			<concept>
+				<code value="535"/>
+				<display value="FA Radiologie (neue (M-)WBO)"/>
+			</concept>
+			<concept>
+				<code value="542"/>
+				<display value="FA Plastische und Ästhetische Chirurgie"/>
+			</concept>
+			<concept>
+				<code value="544"/>
+				<display value="FA Allgemeinchirurgie"/>
+			</concept>
+		</include>
+		<include>
+			<system value="urn:oid:1.2.276.0.76.5.493"/>
+			<concept>
+				<code value="1"/>
+				<display value="Arzt in Facharztausbildung"/>
+			</concept>
+			<concept>
+				<code value="3"/>
+				<display value="Praktischer Arzt"/>
+			</concept>
+		</include>
+		<include>
+			<system value="urn:oid:1.3.6.1.4.1.19376.3.276.1.5.11"/>
+			<concept>
+				<code value="2"/>
+				<display value="Arzthilfe, Praxisorganisation, -verwaltung"/>
+			</concept>
+			<concept>
+				<code value="179"/>
+				<display value="Physician Assistant"/>
+			</concept>
+			<concept>
+				<code value="4"/>
+				<display value="Medizinischer Fachangestellter"/>
+			</concept>
+			<concept>
+				<code value="33"/>
+				<display value="Kranken-, Altenpflege, Geburtshilfe"/>
+			</concept>
+			<concept>
+				<code value="41"/>
+				<display value="Hebamme / Entbindungspfleger"/>
+			</concept>
+			<concept>
+				<code value="86"/>
+				<display value="Rettungsdienst"/>
+			</concept>
+			<concept>
+				<code value="88"/>
+				<display value="Notfallsanitäter"/>
+			</concept>
+			<concept>
+				<code value="89"/>
+				<display value="Rettungsassistent"/>
+			</concept>
+			<concept>
+				<code value="91"/>
+				<display value="Rettungssanitäter"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

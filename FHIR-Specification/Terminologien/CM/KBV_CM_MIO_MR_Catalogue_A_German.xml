@@ -1,0 +1,257 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+	<url value="https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_MR_Catalogue_A_German"/>
+	<version value="1.1.0"/>
+	<name value="KBV_CM_MIO_MR_Catalogue_A_German"/>
+	<title value="Anamneseerhebung bei Erstuntersuchung"/>
+	<status value="active" />
+	<experimental value="false"/>
+	<publisher value="Kassenärztliche Bundesvereinigung (KBV)"/>
+	<contact>
+		<telecom>
+			<system value="url"/>
+			<value value="https://mio.kbv.de"/>
+		</telecom>
+	</contact>
+	<description value="Diese Conceptmap verknüpft die Codes für die Anamneseerhebung bei Erstuntersuchung mit deutschen Bezeichnungen."/>
+	<copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE."/>
+	<group>
+		<source value="http://snomed.info/sct"/>
+		<sourceVersion value="http://snomed.info/sct/900000000000207008/version/20210731"/>
+		<target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_MR_Catalogue_A_German"/>
+		<targetVersion value="1.1.0"/>
+		<element>
+			<code value="416471007"/>
+			<display value="Family history of clinical finding (situation)"/>
+			<target>
+				<code value="FamiliaereBelastungzBDiabetesHypertonieFehlbildungengenetischeKrankheitenpsychischeKrankheiten"/>
+				<display value="(1) Familiäre Belastung (z.B. Diabetes, Hypertonie, Fehlbildungen, genetische Krankheiten, psychische Krankheiten)"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="312850006"/>
+			<display value="History of disorder (situation)"/>
+			<target>
+				<code value="FruehereeigeneschwereErkrankungenzBHerzLungeLeberNierenZNSPsyche"/>
+				<display value="(2) Frühere eigene schwere Erkrankungen (z.B. Herz, Lunge, Leber, Nieren, ZNS, Psyche)"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="161460007"/>
+			<display value="History of coagulation defect (situation)"/>
+			<target>
+				<code value="BlutungsThromboseneigung"/>
+				<display value="(3) Blutungs-/Thromboseneigung"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="609328004"/>
+			<display value="Allergic disposition (finding)"/>
+			<target>
+				<code value="AllergiezBgegenMedikamente"/>
+				<display value="(4) Allergie, z.B. gegen Medikamente"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="161664006"/>
+			<display value="History of blood transfusion (situation)"/>
+			<target>
+				<code value="FruehereBluttransfusionen"/>
+				<display value="(5) Frühere Bluttransfusionen"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="271596009"/>
+			<display value="Mental distress (finding)"/>
+			<target>
+				<code value="BesonderepsychischeBelastungzBfamiliaereoderberufliche"/>
+				<display value="(6) Besondere psychische Belastung (z.B. familiäre oder berufliche)"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="161152002"/>
+			<display value="Social problem (finding)"/>
+			<target>
+				<code value="BesonderesozialeBelastungzBIntegrationsproblemewirtschaftlicheProbleme"/>
+				<display value="(7) Besondere soziale Belastung (z.B. Integrationsprobleme, wirtschaftliche Probleme)"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="1156098006"/>
+			<display value="History of Rhesus isoimmunization affecting pregnancy (situation)"/>
+			<target>
+				<code value="RhesusInkompatibilitaetbeivorangegangenenSchwangerschaften"/>
+				<display value="(8) Rhesus-Inkompatibilität (bei vorangegangenen Schwangerschaften)"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="73211009"/>
+			<display value="Diabetes mellitus (disorder)"/>
+			<target>
+				<code value="Diabetesmellitus"/>
+				<display value="(9) Diabetes mellitus"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="414916001"/>
+			<display value="Obesity (disorder)"/>
+			<target>
+				<code value="Adipositas"/>
+				<display value="(10) Adipositas"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="237837007"/>
+			<display value="Primordial dwarfism (disorder)"/>
+			<target>
+				<code value="Kleinwuchs"/>
+				<display value="(11) Kleinwuchs"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="8447006"/>
+			<display value="Congenital anomaly of skeletal bone (disorder)"/>
+			<target>
+				<code value="Skelettanomalien"/>
+				<display value="(12) Skelettanomalien"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="237240001"/>
+			<display value="Teenage pregnancy (finding)"/>
+			<target>
+				<code value="SchwangereunterJahren"/>
+				<display value="(13) Schwangere unter 18 Jahren"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="416413003"/>
+			<display value="Advanced maternal age gravida (finding)"/>
+			<target>
+				<code value="SchwangereueberJahren"/>
+				<display value="(14) Schwangere über 35 Jahren"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="18656007"/>
+			<display value="Grand multipara (finding)"/>
+			<target>
+				<code value="VielgebaerendemehralsKinder"/>
+				<display value="(15) Vielgebärende (mehr als 4 Kinder)"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="134521000119104"/>
+			<display value="Fertility preservation procedure done (situation)"/>
+			<target>
+				<code value="ZustandnachSterilitaetsbehandlung"/>
+				<display value="(16) Zustand nach Sterilitätsbehandlung"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="161765003"/>
+			<display value="History of premature delivery (situation)"/>
+			<target>
+				<code value="ZustandnachFruehgeburtvorEndederSSW"/>
+				<display value="(17) Zustand nach Frühgeburt (vor Ende der 37. SSW)"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="726565008"/>
+			<display value="Past history of small for gestational age baby (situation)"/>
+			<target>
+				<code value="ZustandnachMangelgeburt"/>
+				<display value="(18) Zustand nach Mangelgeburt"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="713651007"/>
+			<display value="History of pregnancy with abortive outcome (situation)"/>
+			<target>
+				<code value="ZustandnachodermehrFehlgeburtenAbbruechen"/>
+				<display value="(19) Zustand nach 2 oder mehr Fehlgeburten/Abbrüchen"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="161743003"/>
+			<display value="History of stillbirth (situation)"/>
+			<target>
+				<code value="TotesgeschaedigtesKindinderAnamnese"/>
+				<display value="(20) Totes/geschädigtes Kind in der Anamnese"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="1156096005"/>
+			<display value="History of complication occurring during labor and delivery (situation)"/>
+			<target>
+				<code value="KomplikationenbeivorausgegangenenEntbindungen"/>
+				<display value="(21) Komplikationen bei vorausgegangenen Entbindungen"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="1156097001"/>
+			<display value="History of complication of puerperium (situation)"/>
+			<target>
+				<code value="Komplikationenpostpartum"/>
+				<display value="(22) Komplikationen post partum"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="161805006"/>
+			<display value="History of cesarean section (situation)"/>
+			<target>
+				<code value="ZustandnachSectio"/>
+				<display value="(23) Zustand nach Sectio"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="1156095009"/>
+			<display value="History of operation on uterus (situation)"/>
+			<target>
+				<code value="ZustandnachanderenUterusoperationen"/>
+				<display value="(24) Zustand nach anderen Uterusoperationen"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="60001007:263502005=424572001"/>
+			<display value="Not pregnant (finding) : Clinical course (attribute) =  Clinical course with short duration (qualifier value)"/>
+			<target>
+				<code value="RascheSchwangerschaftsfolgewenigeralsJahr"/>
+				<display value="(25) Rasche Schwangerschaftsfolge (weniger als 1 Jahr)"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+		<element>
+			<code value="418138009"/>
+			<display value="Patient condition finding (finding)"/>
+			<target>
+				<code value="AndereBesonderheiten"/>
+				<display value="(26) Andere Besonderheiten"/>
+				<equivalence value="equivalent"/>
+			</target>
+		</element>
+	</group>
+</ConceptMap>
